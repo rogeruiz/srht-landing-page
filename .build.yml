@@ -1,0 +1,24 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  project: landing-page
+  site: rogeruiz.srht.site
+packages:
+  - yarn
+tasks:
+  - install_dependencies: |
+      pushd ${project}
+      yarn
+      popd
+  - export: |
+      pushd ${project}
+      yarn export
+      popd
+  - package: |
+      pushd ${project}
+      tar -C out -cvz . > ../site.tar.gz
+      popd
+      file site.tar.gz
+  - deploy: |
+      acurl -f "https://pages.sr.ht/publish/${project}" \
+       -Fcontent=@site.tar.gz
