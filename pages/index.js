@@ -4,7 +4,9 @@ import {
   AlertTitle,
   Box,
   Container,
-  Heading
+  Heading,
+  Stack,
+  Text
 } from '@chakra-ui/react'
 import ThemeToggleButton from '../components/theme-toggle-button'
 
@@ -32,6 +34,12 @@ const Home = () => {
         <AlertIcon />
         <AlertTitle>This is currently a work in progress.</AlertTitle>
       </Alert>
+      <Stack spacing={3} mt={'1rem'}>
+        <Text fontSize="3xl">
+          I&lsquo;m Roger Steve Ruiz. I am an L4 Senior Engineer at TrussWorks
+          building user-centered digital services.
+        </Text>
+      </Stack>
     </Container>
   )
 }
