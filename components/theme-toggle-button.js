@@ -27,7 +27,7 @@ const ThemeToggleButton = () => {
 
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
-      <Box position={'fixed'} bottom={20} right={20}>
+      <Box position={'fixed'} bottom={10} right={10}>
         <motion.div
           style={{ display: 'inline-block' }}
           key={useColorModeValue('light', 'dark')}
