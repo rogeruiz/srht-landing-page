@@ -5,8 +5,6 @@ import {
 } from '@chakra-ui/react'
 import theme from '../lib/theme'
 
-import Fonts from '../lib/fonts'
-
 export default function Chakra({ cookies, children }) {
   const colorModeManager =
     typeof cookies === 'string'
@@ -15,7 +13,6 @@ export default function Chakra({ cookies, children }) {
 
   return (
     <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
-      <Fonts />
       {children}
     </ChakraProvider>
   )
