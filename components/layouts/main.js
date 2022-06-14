@@ -6,7 +6,7 @@ const Main = ({ children }) => {
   return (
     <Box as="main" pb={8}>
       <Head></Head>
-      <Container maxW="container.xl" pt={14}>
+      <Container maxW="container.xl" pt={4}>
         {children}
         <Footer />
       </Container>
