@@ -6,7 +6,8 @@ import {
   Container,
   Heading,
   Stack,
-  Text
+  Text,
+  Link
 } from '@chakra-ui/react'
 import ThemeToggleButton from '../components/theme-toggle-button'
 
@@ -22,7 +23,12 @@ const Home = () => {
         justify="space-between"
       >
         <Box flex={2} align="left">
-          <Heading as="h1" size="md" letterSpacing={'tighter'}>
+          <Heading
+            as="h1"
+            size="md"
+            variant="section-title"
+            letterSpacing={'tighter'}
+          >
             Roger Steve Ruiz has a landing page
           </Heading>
         </Box>
@@ -36,7 +42,10 @@ const Home = () => {
       </Alert>
       <Stack spacing={3} mt={'1rem'}>
         <Text fontSize="3xl">
-          I&lsquo;m Roger Steve Ruiz. I am an L4 Senior Engineer at TrussWorks
+          I&lsquo;m Roger Steve Ruiz. I am an L4 Senior Engineer at
+          <Link p="5px" href="https://truss.works/">
+            TrussWorks
+          </Link>
           building user-centered digital services.
         </Text>
       </Stack>
