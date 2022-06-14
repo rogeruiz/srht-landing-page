@@ -2,6 +2,8 @@ import Layout from '../components/layouts/main'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 
+import UnderConstructionBanner from '../components/under-construction-banner'
+
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }
@@ -19,6 +21,7 @@ function Website({ Component, pageProps, router }) {
             }
           }}
         >
+          <UnderConstructionBanner />
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </Layout>
