@@ -4,15 +4,15 @@ environment:
   project: landing-page
   site: rogeruiz.srht.site
 packages:
-  - yarn
+  - npm
 tasks:
   - install_dependencies: |
       pushd ${project}
-      yarn
+      npm install
       popd
   - export: |
       pushd ${project}
-      yarn export
+      npm run export
       popd
   - package: |
       pushd ${project}

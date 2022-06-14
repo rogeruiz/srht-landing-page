@@ -1,8 +1,8 @@
 const ContentSecurityPolicy = `
   default-src 'self' 'unsafe-inline';
   script-src 'self' 'unsafe-inline' 'unsafe-eval';
-  style-src 'self' fonts.gstatic.com 'unsafe-inline';
-  font-src 'self' fonts.gstatic.com 'unsafe-inline';
+  style-src 'self' 'unsafe-inline';
+  font-src 'self' data: fonts.gstatic.com 'unsafe-inline';
 `
 
 const securityHeaders = [
