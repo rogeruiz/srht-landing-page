@@ -13,10 +13,10 @@ const ThemeToggleButton = () => {
 
   const buttonVariant = {
     hover: clicked => ({
-      scale: clicked ? 1 : 1.5
+      scale: clicked ? 1 : 0.75
     }),
     pressed: {
-      scale: 0.5
+      scale: 1.5
     },
     rest: {
       scale: 1
@@ -26,8 +26,8 @@ const ThemeToggleButton = () => {
   const [clicked, setClicked] = React.useState(false)
 
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
-      <Box position={'fixed'} bottom={10} right={10}>
+    <AnimatePresence exitBeforeEnter initial={true}>
+      <Box position={'fixed'} bottom={10} left={10}>
         <motion.div
           style={{ display: 'inline-block' }}
           key={useColorModeValue('light', 'dark')}
