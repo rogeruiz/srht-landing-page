@@ -6,11 +6,12 @@ import {
   Stack,
   Text,
   Link,
-  UnorderedList,
+  List,
   ListItem,
+  ListIcon,
   Image
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon, LinkIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from '../components/theme-toggle-button'
 
 const Home = () => {
@@ -29,12 +30,36 @@ const Home = () => {
         <Heading as="h1" fontSize={'5xl'} textTransform={'uppercase'} mb={3}>
           Roger Steve Ruiz has a landing page
         </Heading>
-        <Text>
+        <Text fontSize={'lg'}>
           I&lsquo;m Roger Steve Ruiz, an L4 Senior Engineer at
           <Link mx={'2px'} href="https://truss.works/">
             TrussWorks <ExternalLinkIcon fontSize={'1rem'} mr="3px" />
           </Link>
-          building user-centered digital services.
+          building user-centered digital services. I am a self-taught software
+          engineer that found my place in web development by coming in through
+          the window, specifically the browser window. Coming from a traditional
+          graphic design background, CSS and systems design were two things that
+          felt as natural as color theory and typography. As I learned more
+          about the history of and fundamentals of programming, I made my
+          transition to full-stack web development with a strong focus on
+          front-end, back-end, infrastructure, and automation.
+        </Text>
+        <Text fontSize={'lg'}>
+          I try to add elements of the emotional in a world of the artificial.
+          We’re all people who work on computers, or sometimes inside the
+          computers e.g. cloud, and it is easy to forget that people at the end
+          of the day are the ones using them. My career has taken me from the
+          private sector to the public sector. I enjoy both kinds of work,
+          although the latter I find has the most to improve on and biggest
+          impact.
+        </Text>
+        <Text fontSize={'lg'}>
+          Currently, my career path has me in more senior roles. I’m mostly
+          focused on release engineering and building the necessary
+          infrastructure and processes to help teams ship and iterate on
+          software. I feel comfortable on-boarding on teams to better understand
+          how to contribute. I find myself consistently working on a lot of
+          different projects and being the glue interconnecting them.
         </Text>
       </GridItem>
       <GridItem colStart={[4, 4]} colSpan={[8, 3]}>
@@ -43,38 +68,48 @@ const Home = () => {
             <Heading as="h2" fontSize={'md'} textTransform={'uppercase'}>
               Pertinent links
             </Heading>
-            <UnorderedList spacing={2}>
+            <List spacing={2}>
               <ListItem>
-                <Link href="https://write.rog.gr/">writing</Link>
+                <Link href="https://write.rog.gr/">
+                  <ListIcon as={LinkIcon} mr={2} />
+                  writing
+                </Link>
               </ListItem>
               <ListItem>
                 <Link href="https://github.com/rogeruiz/">
+                  <ListIcon as={ExternalLinkIcon} mr={2} />
                   GitHub repositories
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="https://git.sr.ht/~rogeruiz/">
+                  <ListIcon as={ExternalLinkIcon} mr={2} />
                   sourcehut repositories
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="https://gist.github.com/rogeruiz/">
+                  <ListIcon as={ExternalLinkIcon} mr={2} />
                   GitHub gists
                 </Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://twitter.com/rogeruiz">Twitter</Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="http://linkedin.com/in/rogeruiz/">LinkedIn</Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://write.rog.gr/resume.pdf">Resume</Link>
               </ListItem>
               <ListItem>
-                <Link href="https://git.sr.ht/~rogeruiz/">Email</Link>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="mailto:hi@rog.gr">Email</Link>
               </ListItem>
-            </UnorderedList>
+            </List>
           </Box>
         </Stack>
       </GridItem>
@@ -84,38 +119,42 @@ const Home = () => {
             <Heading as="h5" fontSize={'sm'} textTransform={'uppercase'}>
               Currently working with
             </Heading>
-            <UnorderedList spacing={2}>
+            <List spacing={2}>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://github.com/">GitHub</Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://golang.org/">Go</Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://reactjs.org/">React</Link>
               </ListItem>
               <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://nextjs.org/">Next.js</Link>
               </ListItem>
               <ListItem>
-                {' '}
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://nixos.org/">NixOS</Link>
               </ListItem>
               <ListItem>
-                {' '}
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">
                   Bash
                 </Link>
               </ListItem>
               <ListItem>
-                {' '}
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://yaml.org/">YAML</Link>
               </ListItem>
               <ListItem>
-                {' '}
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="https://www.rust-lang.org/">Rust</Link>
               </ListItem>
-            </UnorderedList>
+            </List>
           </Box>
         </Stack>
       </GridItem>
