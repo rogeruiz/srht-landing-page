@@ -23,7 +23,7 @@ const ThemeToggleButton = () => {
     }
   }
 
-  const [clicked, setClicked] = React.useState(false)
+  const [clicked, setClicked] = React.useState(true)
 
   return (
     <AnimatePresence exitBeforeEnter initial={true}>
