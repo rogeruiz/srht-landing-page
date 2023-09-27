@@ -125,37 +125,53 @@ const Home = () => {
             <List spacing={2}>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://github.com/">GitHub</Link>
+                <Link href="https://git-scm.com/" target="_blank" rel="noopener">Git</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://golang.org/">Go</Link>
+                <Link href="https://www.python.org" target="_blank" rel="noopener">Python</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://reactjs.org/">React</Link>
+                <Link href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener">Ruby</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://nextjs.org/">Next.js</Link>
+                <Link href="https://www.rust-lang.org/" target="_blank" rel="noopener">Rust</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://nixos.org/">NixOS</Link>
+                <Link href="https://golang.org/" target="_blank" rel="noopener">Go</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">
+                <Link href="https://reactjs.org/" target="_blank" rel="noopener">React</Link>
+              </ListItem>
+              <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="https://nextjs.org/" target="_blank" rel="noopener">Next.js</Link>
+              </ListItem>
+              <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="https://nixos.org/" target="_blank" rel="noopener">NixOS</Link>
+              </ListItem>
+              <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html" target="_blank" rel="noopener">
                   Bash
                 </Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://yaml.org/">YAML</Link>
+                <Link href="https://yaml.org/" target="_blank" rel="noopener">YAML</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
-                <Link href="https://www.rust-lang.org/">Rust</Link>
+                <Link href="https://bun.sh" target="_blank" rel="noopener">Bun</Link>
+              </ListItem>
+              <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="https://www.swift.org/" target="_blank" rel="noopener">Swift</Link>
               </ListItem>
             </List>
           </Box>
