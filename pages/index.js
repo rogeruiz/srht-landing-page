@@ -60,9 +60,9 @@ const Home = () => {
           I&lsquo;ve been the most interested in release engineering and building the
           necessary infrastructure and processes to help teams ship and iterate on
           software of all kinds. I excel in an open-source capacity as open-source
-          software has predecated much of my career in tech. I also sometimes find
-          myself consistently working on a lot of different projects and am considered
-          the glue interconnecting them.
+          software has predicated much of my career in tech. I also sometimes
+          find myself consistently working on a lot of different projects and am
+          considered the glue interconnecting them.
         </Text>
       </GridItem>
       <GridItem colStart={[4, 4]} colSpan={[8, 3]}>
