@@ -30,19 +30,21 @@ const Home = () => {
         <Heading as="h1" fontSize={'5xl'} textTransform={'uppercase'} mb={3}>
           Roger Steve Ruiz has a landing page
         </Heading>
+        <Text fontSize={'2xl'}>
+          I&lsquo;m Roger Steve Ruiz, a software engineer specializing in cloud
+          infrastructure, security, and application development. I&lsquo;m currently
+          open to opportunities either full-time or contracting basis. I look forward
+          to hearing from you.
+        </Text>
         <Text fontSize={'lg'}>
-          I&lsquo;m Roger Steve Ruiz, an L4 Senior Engineer at
-          <Link mx={'2px'} href="https://truss.works/">
-            TrussWorks <ExternalLinkIcon fontSize={'1rem'} mr="3px" />
-          </Link>
-          building user-centered digital services. I am a self-taught software
-          engineer that found my place in web development by coming in through
-          the window, specifically the browser window. Coming from a traditional
-          graphic design background, CSS and systems design were two things that
-          felt as natural as color theory and typography. As I learned more
-          about the history of and fundamentals of programming, I made my
-          transition to full-stack web development with a strong focus on
-          front-end, back-end, infrastructure, and automation.
+          For the past 12 years I&lsquo;ve been building user-centered digital
+          services for both the public and private sector. I found my place in web
+          development by coming in through the window, specifically the browser window.
+          Coming from a traditional graphic design background, CSS and systems design
+          were two things that felt as natural as color theory and typography. As I
+          learned more about the history of and fundamentals of programming, I made my
+          transition to full-stack web development with a strong focus on front-end,
+          back-end, infrastructure, and automation.
         </Text>
         <Text fontSize={'lg'}>
           I try to add elements of the emotional in a world of the artificial.
@@ -54,12 +56,13 @@ const Home = () => {
           impact.
         </Text>
         <Text fontSize={'lg'}>
-          Currently, my career path has me in more senior roles. I’m mostly
-          focused on release engineering and building the necessary
-          infrastructure and processes to help teams ship and iterate on
-          software. I feel comfortable on-boarding on teams to better understand
-          how to contribute. I find myself consistently working on a lot of
-          different projects and being the glue interconnecting them.
+          Currently, my career has me in more Staff+ engineering roles.
+          I&lsquo;ve been the most interested in release engineering and building the
+          necessary infrastructure and processes to help teams ship and iterate on
+          software of all kinds. I excel in an open-source capacity as open-source
+          software has predecated much of my career in tech. I also sometimes find
+          myself consistently working on a lot of different projects and am considered
+          the glue interconnecting them.
         </Text>
       </GridItem>
       <GridItem colStart={[4, 4]} colSpan={[8, 3]}>
