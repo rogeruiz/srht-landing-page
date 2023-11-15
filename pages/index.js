@@ -110,6 +110,10 @@ const Home = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={ExternalLinkIcon} mr={2} />
+                <Link href="https://app.codesignal.com/profile/rogeruiz/overview">CodeSignal</Link>
+              </ListItem>
+              <ListItem>
+                <ListIcon as={ExternalLinkIcon} mr={2} />
                 <Link href="mailto:hi@rog.gr">Email</Link>
               </ListItem>
             </List>
