@@ -1,0 +1,5 @@
+# NextJS
+.next
+node_modules
+out
+yarn.lock
