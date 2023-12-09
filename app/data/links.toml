@@ -1,0 +1,22 @@
+[[daily]]
+name = "GitHub"
+href = "https://github.com/"
+desc = """
+I check a lot of things out on GitHub and use it to explore projects in OSS."""
+
+[[daily]]
+name = "Exercism"
+href = "https://exercism.org/"
+desc = """
+I practice coding & mentoring while exploring new languages on Exercism
+regularly."""
+
+[[daily]]
+name = "Hacker News"
+href = "https://news.ycombinator.com/"
+desc = """"""
+
+[[daily]]
+name = "Lobsters"
+href = "https://lobste.rs/"
+desc = """"""

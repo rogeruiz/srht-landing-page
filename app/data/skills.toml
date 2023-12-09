@@ -1,0 +1,50 @@
+[[languages]]
+name = "Python"
+desc = """"""
+href = "https://www.python.org"
+
+[[languages]]
+name = "JavaScript"
+desc = """"""
+href = "https://developer.mozilla.org/en-US/docs/Web/javascript"
+
+[[languages]]
+name = "Rust"
+desc = ""
+href = "https://www.rust-lang.org/"
+
+[[languages]]
+name = "Go"
+desc = ""
+href = "https://golang.org/"
+
+[[languages]]
+name = "Bash"
+desc = ""
+href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
+
+[[frameworks]]
+name = "React"
+desc = ""
+href= "https://reactjs.org/"
+
+[[frameworks]]
+name = "NextJS"
+desc = ""
+href= "https://nextjs.org/"
+
+[[package_managers]]
+name = "NixOS"
+desc = ""
+href = "https://nixos.org/"
+
+[[configuration]]
+name = "Yaml"
+desc = ""
+href = "https://yaml.org/"
+
+[[configuration]]
+name = "TOML"
+desc = ""
+href = "https://toml.io/en/"
+
