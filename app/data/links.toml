@@ -1,8 +1,25 @@
+# NextJS SSG Landing Page
+# Copyright (C) 2023  Roger Steve Ruiz
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 [[daily]]
-name = "GitHub"
-href = "https://github.com/"
-desc = """
-I check a lot of things out on GitHub and use it to explore projects in OSS."""
+name = "Pinboard"
+desc = """It's social bookmarking for introverts. I use this for a lot of my own
+bookmarking. Some of my bookmarks from there may even end up here if it's useful
+enough to use every day."""
+href = "https://pinboard.in/"
 
 [[daily]]
 name = "Exercism"
@@ -12,11 +29,45 @@ I practice coding & mentoring while exploring new languages on Exercism
 regularly."""
 
 [[daily]]
+name = "CodeSignal App"
+href = "https://app.codesignal.com/"
+desc = """
+I practice coding puzzles on here every now & then."""
+
+[[daily]]
 name = "Hacker News"
 href = "https://news.ycombinator.com/"
-desc = """"""
+desc = """A link aggregation and discussion platform run by Y Combinator, a tech
+incubator and investing company."""
 
 [[daily]]
 name = "Lobsters"
 href = "https://lobste.rs/"
-desc = """"""
+desc = """This is a computing-focused community that uses link aggregation and
+discussion."""
+
+[[daily]]
+name = "sourcehut"
+href = "https://sr.ht/"
+desc = """It's a collection of tools useful for software development. The
+hacker's forge!"""
+
+[[daily]]
+name = "GitHub"
+href = "https://github.com/"
+desc = """I check a lot of things out on GitHub and use it to explore projects
+in OSS."""
+
+[[daily]]
+name = "Gist on GitHub"
+href = "https://gist.github.com/"
+desc = """This is GitHub's pastebin-clone where I post a lot of little
+interesting snippets from time to time. I was more active here earlier in my
+career"""
+
+[[daily]]
+name = "LinkedIn"
+href = "https://www.linkedin.com/"
+desc = """It's the social media website disguised as a "professional" networking
+website disguised as a townsquare."""
+

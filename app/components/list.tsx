@@ -25,23 +25,26 @@ interface Links extends Array<Link> {}
 export default function List({ title, data }: { title: string; data: Links }) {
   const listItems = data.map((li: Link, idx: number) => {
     return (
-      <li key={idx} className="list-none hover:list-disc my-1">
-        <a
-          className="underline text-yellow hover:text-teal visited:text-lavender block"
-          href={li.href}
-          title={li.desc}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {li.name}
-        </a>
+      <li key={idx} className="list-none md:hover:list-disc my-1">
+        {li.href && (
+          <a
+            className="underline text-yellow hover:text-teal visited:text-lavender block"
+            href={li.href}
+            title={li.desc}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {li.name}
+          </a>
+        )}
+        {!li.href && li.name}
       </li>
     )
   })
 
   return (
-    <div className="bg-mantle p-8 rounded mb-10 md:mb-0">
-      <h4 className="text-overlay2 shadow-surface2 text-xl font-display uppercase mb-5">
+    <div className="bg-mantle p-8 rounded mb-10 lg:mb-0">
+      <h4 className="text-overlay2 shadow-surface2 text-2xl md:text-lg lg:text-xl font-display uppercase mb-5">
         {title}
       </h4>
       <ul className="mb-12">{listItems}</ul>

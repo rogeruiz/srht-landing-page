@@ -14,20 +14,26 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import path from 'path'
-const read = require('fs-read-data').readFile
-
-export async function getDailys() {
-  const filePath = path.join(process.cwd(), 'app/data/links.toml')
-  return await read(filePath)
+interface Fortune {
+  say: string
+  author: string | undefined
 }
 
-export async function getSkills() {
-  const filePath = path.join(process.cwd(), 'app/data/skills.toml')
-  return await read(filePath)
-}
+export default function List({ data }: { data: Fortune[] }) {
+  const idx: number = Math.floor(Math.random() * data.length)
 
-export async function getFortunes() {
-  const filePath = path.join(process.cwd(), 'app/data/fortunes.toml')
-  return await read(filePath)
+  const quote: Fortune = data[idx]
+
+  return (
+    <div className="bg-overlay1 border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-xl">
+      <blockquote className="text-mantle shadow-surface2 text-xl md:text-lg lg:text-xl font-sans uppercase">
+        {quote.say}
+      </blockquote>
+      {quote.author && (
+        <h5 className="text-mantle font-display text-lg mt-5">
+          — {quote.author}
+        </h5>
+      )}
+    </div>
+  )
 }

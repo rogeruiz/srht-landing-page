@@ -1,3 +1,19 @@
+# NextJS SSG Landing Page
+# Copyright (C) 2023  Roger Steve Ruiz
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 [[languages]]
 name = "Python"
 desc = """"""
@@ -33,17 +49,29 @@ name = "NextJS"
 desc = ""
 href= "https://nextjs.org/"
 
-[[package_managers]]
+[[packageManagers]]
 name = "NixOS"
 desc = ""
 href = "https://nixos.org/"
 
-[[configuration]]
+[[packageManagers]]
+name = "MacPorts"
+desc = """MacPorts is a community initiative that provides a software package
+and a command-line tool to install, upgrade, and manage open-source software on
+the Mac OS X operating system. """
+href = "https://www.macports.org/"
+
+[[packageManagers]]
+name = "Homebrew"
+desc = """Homebrew lets you install packages and apps that Apple or your Linux system didn't provide."""
+href = "https://brew.sh/"
+
+[[configurationLanguages]]
 name = "Yaml"
 desc = ""
 href = "https://yaml.org/"
 
-[[configuration]]
+[[configurationLanguages]]
 name = "TOML"
 desc = ""
 href = "https://toml.io/en/"
