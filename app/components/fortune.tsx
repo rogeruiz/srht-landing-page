@@ -19,8 +19,12 @@ interface Fortune {
   author: string | undefined
 }
 
+function getRandomIdx(max: number) {
+  return Math.floor(Math.random() * max)
+}
+
 export default function List({ data }: { data: Fortune[] }) {
-  const idx: number = Math.floor(Math.random() * data.length)
+  let idx: number = getRandomIdx(data.length)
 
   const quote: Fortune = data[idx]
 
