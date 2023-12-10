@@ -15,6 +15,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import type { Metadata } from 'next'
+import { Viewport } from 'next'
 import './globals.css'
 import Hepta from './fonts/hepta'
 import Mplus2 from './fonts/mplus_2m'
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
     'This is a simple little landing page which showcases my experience and skills but also I use to navigate around the web. It is literally a home page for me.'
 }
 
+export const viewport: Viewport = {
+  themeColor: [{ media: '(prefers-color-scheme: dark)', color: '--ctp-base' }]
+}
+
 const htmlFontCSSVariables = `${Hepta.variable} ${Mplus2.variable} ${Righteuous.variable}`
 
 export default function RootLayout({
@@ -35,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={htmlFontCSSVariables}>
-      <body className="mocha">{children}</body>
+      <body className="mocha bg-base">{children}</body>
     </html>
   )
 }

@@ -43,11 +43,13 @@ export default function List({ title, data }: { title: string; data: Links }) {
   })
 
   return (
-    <div className="bg-mantle p-8 rounded mb-10 lg:mb-0">
-      <h4 className="text-overlay2 shadow-surface2 text-2xl md:text-lg lg:text-xl font-display uppercase mb-5">
-        {title}
-      </h4>
-      <ul className="mb-12">{listItems}</ul>
+    <div className="bg-mantle rounded mb-10 lg:mb-0">
+      <section className="bg-mauve text-base px-8 pt-8 pb-2 mb-5">
+        <h4 className="text-surface1 shadow-surface2 text-2xl md:text-lg lg:text-xl font-display uppercase mb-5">
+          {title}
+        </h4>
+      </section>
+      {data && <ul className="px-8 mb-12 grid grid-cols-2">{listItems}</ul>}
     </div>
   )
 }

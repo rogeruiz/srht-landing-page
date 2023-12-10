@@ -14,16 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import Image from 'next/image'
 import List from './components/list'
 import Fortune from './components/fortune'
 import { getDailys, getSkills, getFortunes } from './lib/fetch-links'
 
-const description = `
-Hi! My name's Roger Steve Ruiz, pronouns he/him, and I'm a software engineer.
+const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, and I've
+been a software engineer since 2011. I started working remotely back in 2013
+too and really enjoy the freedom and responsibility of working asynchronously.
 You've landed on my little page. I use this page as a personal homepage, but it
-also includes a number of other fun details like programming langauges and
-frameworks that I know as well.
-`
+also includes a number of other details like programming langauges & frameworks
+that I have experience in as well.`
 
 interface Quote {
   author: string
@@ -43,7 +44,7 @@ interface Dailies {
 }
 interface Skills {
   languages: Link[]
-  frameworks: Link[]
+  frameworksLibraries: Link[]
   packageManagers: Link[]
   configurationLanguages: Link[]
 }
@@ -67,10 +68,13 @@ export default async function Home() {
       <section className="flex flex-col items-center justify-between mb-10">
         <Fortune data={fortuneData.quotes} />
       </section>
-      <section className="md:grid md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-4">
+      <section className="md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-3 mb-10">
         <List title="the dailies" data={linkData.daily} />
         <List title="programming languages" data={skillData.languages} />
-        <List title="frameworks" data={skillData.frameworks} />
+        <List
+          title="frameworks & libraries"
+          data={skillData.frameworksLibraries}
+        />
         <List title="package managers" data={skillData.packageManagers} />
         <List
           title="configuration languages"
@@ -78,7 +82,14 @@ export default async function Home() {
         />
       </section>
       <section className="lg:grid lg:grid-cols-2 lg:gap-4">
-        <p className="lg:col-start-2 mt-8">{description}</p>
+        <Image
+          className="float-left mr-6 mb-6 lg:mb-0 lg:col-start-2 rounded-full"
+          width="120"
+          height="120"
+          src="images/headshot-2021.jpg"
+          alt="Roger Steve Ruiz headshot"
+        />
+        <p className="lg:col-start-2">{description}</p>
       </section>
     </main>
   )

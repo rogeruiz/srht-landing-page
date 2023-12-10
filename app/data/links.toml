@@ -22,6 +22,18 @@ enough to use every day."""
 href = "https://pinboard.in/"
 
 [[daily]]
+name = "DuckDuckGo"
+href = "https://ddg.co/"
+desc = """The search engine I love to use. It's got bangs-support (!g, !w, !a,
+etc) for ergonomic search"""
+
+[[daily]]
+name = "Wikipedia"
+href = "https://en.wikipedia.org/wiki/Main_Page"
+desc = """Hitting the random button a couple of times on this is a nice way to
+relax"""
+
+[[daily]]
 name = "Exercism"
 href = "https://exercism.org/"
 desc = """
@@ -71,18 +83,7 @@ href = "https://www.linkedin.com/"
 desc = """It's the social media website disguised as a "professional" networking
 website disguised as a townsquare."""
 
-
 [[daily]]
 name = "Goodreads"
 href = "https://www.goodreads.com/"
 desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
-
-[[daily]]
-name = "Wikipedia"
-href = ""
-desc = ""
-
-[[daily]]
-name = "DuckDuckGoq"
-href = ""
-desc = ""

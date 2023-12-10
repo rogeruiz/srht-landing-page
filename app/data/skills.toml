@@ -15,6 +15,11 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 [[languages]]
+name = "Bash"
+desc = ""
+href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
+
+[[languages]]
 name = "Python"
 desc = """"""
 href = "https://www.python.org"
@@ -23,6 +28,16 @@ href = "https://www.python.org"
 name = "JavaScript"
 desc = """"""
 href = "https://developer.mozilla.org/en-US/docs/Web/javascript"
+
+[[languages]]
+name = "TypeScript"
+desc = """"""
+href = "https://www.typescriptlang.org/docs/"
+
+[[languages]]
+name = "Ruby"
+desc = ""
+href = "https://ruby-doc.org/current"
 
 [[languages]]
 name = "Rust"
@@ -35,19 +50,44 @@ desc = ""
 href = "https://golang.org/"
 
 [[languages]]
-name = "Bash"
+name = "Swift"
 desc = ""
-href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
+href = "https://developer.apple.com/documentation/swift/swift-standard-library"
 
-[[frameworks]]
+[[frameworksLibraries]]
 name = "React"
 desc = ""
-href= "https://reactjs.org/"
+href= "https://es.react.dev/reference/react"
 
-[[frameworks]]
+[[frameworksLibraries]]
 name = "NextJS"
 desc = ""
-href= "https://nextjs.org/"
+href= "https://nextjs.org/docs"
+
+[[frameworksLibraries]]
+name = "Fast API"
+desc = ""
+href= "https://fastapi.tiangolo.com/reference/"
+
+[[frameworksLibraries]]
+name = "Django"
+desc = ""
+href= "https://docs.djangoproject.com/"
+
+[[frameworksLibraries]]
+name = "Ruby on Rails"
+desc = ""
+href= "https://api.jquery.com"
+
+[[frameworksLibraries]]
+name = "jQuery"
+desc = ""
+href= "https://api.jquery.com"
+
+[[frameworksLibraries]]
+name = "Laravel"
+desc = ""
+href = "https://laravel.com/docs"
 
 [[packageManagers]]
 name = "NixOS"
@@ -64,7 +104,12 @@ href = "https://www.macports.org/"
 [[packageManagers]]
 name = "Homebrew"
 desc = """Homebrew lets you install packages and apps that Apple or your Linux system didn't provide."""
-href = "https://brew.sh/"
+href = "https://brew.sh/blog/"
+
+[[packageManagers]]
+name = "Arch Linux packages"
+desc = """The Arch Linux distrobution package manager."""
+href = "https://archlinux.org/packages/"
 
 [[configurationLanguages]]
 name = "Yaml"
@@ -72,7 +117,18 @@ desc = ""
 href = "https://yaml.org/"
 
 [[configurationLanguages]]
+name = "JSON"
+desc = ""
+href = "https://www.json.org/json-en.html"
+
+
+[[configurationLanguages]]
 name = "TOML"
 desc = ""
-href = "https://toml.io/en/"
+href = "https://toml.io/en/latest"
+
+[[buildSystems]]
+name = "Kubernetes"
+desc = """"""
+href = ""
 
