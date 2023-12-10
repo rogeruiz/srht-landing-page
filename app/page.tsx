@@ -14,9 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import dynamic from 'next/dynamic'
+
 import Image from 'next/image'
 import List from './components/list'
-import Fortune from './components/fortune'
+// import Fortune from './components/fortune'
+const Fortune = dynamic(() => import('./components/fortune'), { ssr: false })
 import { getDailys, getSkills, getFortunes } from './lib/fetch-links'
 
 const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, and I've
