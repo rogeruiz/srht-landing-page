@@ -71,7 +71,7 @@ desc = """I check a lot of things out on GitHub and use it to explore projects
 in OSS."""
 
 [[daily]]
-name = "Gist on GitHub"
+name = "Gists"
 href = "https://gist.github.com/"
 desc = """This is GitHub's pastebin-clone where I post a lot of little
 interesting snippets from time to time. I was more active here earlier in my
@@ -87,3 +87,8 @@ website disguised as a townsquare."""
 name = "Goodreads"
 href = "https://www.goodreads.com/"
 desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
+
+[[daily]]
+name = "write.rog.gr"
+href = "https://write.rog.gr/"
+desc = "This is my personal blog with my writings on software things."

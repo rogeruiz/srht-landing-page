@@ -25,7 +25,7 @@ interface Links extends Array<Link> {}
 export default function List({ title, data }: { title: string; data: Links }) {
   const listItems = data.map((li: Link, idx: number) => {
     return (
-      <li key={idx} className="list-none md:hover:list-disc my-1">
+      <li key={idx} className="list-none md:hover:list-disc my-4 md:my-2">
         {li.href && (
           <a
             className="underline text-yellow hover:text-teal visited:text-lavender block"
@@ -49,7 +49,9 @@ export default function List({ title, data }: { title: string; data: Links }) {
           {title}
         </h4>
       </section>
-      {data && <ul className="px-8 mb-12 grid grid-cols-2">{listItems}</ul>}
+      {data && (
+        <ul className="px-8 pb-12 md:grid md:grid-cols-2">{listItems}</ul>
+      )}
     </div>
   )
 }

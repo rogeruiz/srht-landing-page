@@ -25,7 +25,7 @@ export default function List({ data }: { data: Fortune[] }) {
   const quote: Fortune = data[idx]
 
   return (
-    <div className="bg-overlay1 border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-xl">
+    <div className="bg-rosewater border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
       <blockquote className="text-mantle shadow-surface2 text-xl md:text-lg lg:text-xl font-sans uppercase">
         {quote.say}
       </blockquote>

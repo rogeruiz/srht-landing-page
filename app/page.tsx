@@ -82,6 +82,7 @@ export default async function Home() {
         />
       </section>
       <section className="lg:grid lg:grid-cols-2 lg:gap-4">
+        <hr className="mb-10 h-px bg-surface2 border-0 lg:mb-2 lg:col-start-2" />
         <Image
           className="float-left mr-6 mb-6 lg:mb-0 lg:col-start-2 rounded-full"
           width="120"
