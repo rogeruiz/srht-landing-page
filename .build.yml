@@ -12,7 +12,7 @@ tasks:
       popd
   - export: |
       pushd ${project}
-      npm run export
+      npm run build
       popd
   - package: |
       pushd ${project}
