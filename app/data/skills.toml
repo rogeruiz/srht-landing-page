@@ -77,7 +77,12 @@ href= "https://docs.djangoproject.com/"
 [[frameworksLibraries]]
 name = "Ruby on Rails"
 desc = ""
-href= "https://api.jquery.com"
+href= "https://api.rubyonrails.org/"
+
+[[frameworksLibraries]]
+name = "Ember.js"
+desc = ""
+href= "https://api.emberjs.com/"
 
 [[frameworksLibraries]]
 name = "jQuery"
@@ -130,5 +135,5 @@ href = "https://toml.io/en/latest"
 [[buildSystems]]
 name = "Kubernetes"
 desc = """"""
-href = ""
+href = "https://kubernetes.io/docs/"
 
