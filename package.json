@@ -10,7 +10,8 @@
     "dev": "next dev -p 4954",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "react": "^18",
