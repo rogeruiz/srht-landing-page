@@ -15,25 +15,20 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 'use client'
 
-import { useEffect, useState } from 'react'
-
-interface Fortune {
+interface Quote {
   say: string
-  author: string | undefined
+  author: string
 }
 
-function getRandomIdx(max: number) {
-  return Math.floor(Math.random() * max)
-}
+export default function Fortune({ data }: { data: Quote[] }) {
+  type Fortune = {
+    say: string
+    author: string
+  }
 
-export default function Fortune({ data }: { data: Fortune[] }) {
-  let idx: number = getRandomIdx(data.length)
+  let idx: number = Math.floor(Math.random() * data.length)
 
-  const [quote, setQuote] = useState(data[idx])
-
-  useEffect(() => {
-    setQuote(data[idx])
-  }, [setQuote])
+  let quote: Fortune = data[idx]
 
   return (
     <div className="bg-rosewater border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
