@@ -22,7 +22,7 @@ href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
 [[languages]]
 name = "Python"
 desc = """"""
-href = "https://www.python.org"
+href = "https://docs.python.org/3/"
 
 [[languages]]
 name = "JavaScript"
@@ -42,17 +42,22 @@ href = "https://ruby-doc.org/current"
 [[languages]]
 name = "Rust"
 desc = ""
-href = "https://www.rust-lang.org/"
+href = "https://doc.rust-lang.org/std/index.html"
 
 [[languages]]
 name = "Go"
 desc = ""
-href = "https://golang.org/"
+href = "https://go.dev/doc/"
 
 [[languages]]
-name = "osaScript"
+name = "AppleScript"
 desc = ""
-href = "https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3551541-osascript"
+href = "https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/index.html#//apple_ref/doc/uid/TP40016239"
+
+[[languages]]
+name = "JXA"
+desc = ""
+href = "https://github.com/JXA-Cookbook/JXA-Cookbook/wiki"
 
 [[languages]]
 name = "Lua"
@@ -67,7 +72,7 @@ href = "https://developer.hashicorp.com/terraform/docs"
 [[frameworksLibraries]]
 name = "React"
 desc = ""
-href= "https://es.react.dev/reference/react"
+href= "https://react.dev/reference/react"
 
 [[frameworksLibraries]]
 name = "NextJS"
@@ -85,9 +90,44 @@ desc = ""
 href= "https://docs.djangoproject.com/"
 
 [[frameworksLibraries]]
+name = "Gin"
+desc = "An HTTP web framework writting in Go with a Martini-like API."
+href = "https://gin-gonic.com/docs/"
+
+[[frameworksLibraries]]
 name = "Ruby on Rails"
 desc = ""
 href= "https://api.rubyonrails.org/"
+
+[[frameworksLibraries]]
+name = "Express"
+desc = ""
+href = "https://expressjs.com/en/4x/api.html"
+
+[[frameworksLibraries]]
+name = "TailwindCSS"
+desc = ""
+href = "http://tailwindcss.com/docs"
+
+[[frameworksLibraries]]
+name = "Hugo"
+desc = ""
+href = "https://gohugo.io/documentation/"
+
+[[frameworksLibraries]]
+name = "Eleventy (11ty)"
+desc = ""
+href = "https://www.11ty.dev/docs/"
+
+[[frameworksLibraries]]
+name = "HTMx"
+desc = ""
+href = "https://htmx.org/docs/"
+
+[[frameworksLibraries]]
+name = "Flask"
+desc = ""
+href = "https://flask.palletsprojects.com/en/latest/#api-reference"
 
 [[frameworksLibraries]]
 name = "Ember.js"
@@ -107,41 +147,41 @@ href = "https://laravel.com/docs"
 [[packageManagers]]
 name = "NixOS"
 desc = ""
-href = "https://nixos.org/"
+href = "https://search.nixos.org/packages"
 
 [[packageManagers]]
 name = "MacPorts"
 desc = """MacPorts is a community initiative that provides a software package
 and a command-line tool to install, upgrade, and manage open-source software on
 the Mac OS X operating system. """
-href = "https://www.macports.org/"
+href = "https://ports.macports.org"
 
 [[packageManagers]]
 name = "Homebrew"
 desc = """Homebrew lets you install packages and apps that Apple or your Linux system didn't provide."""
-href = "https://brew.sh/blog/"
+href = "https://formulae.brew.sh"
 
 [[packageManagers]]
-name = "Arch Linux packages"
+name = "Arch"
 desc = """The Arch Linux distribution package manager."""
 href = "https://archlinux.org/packages/"
 
 [[packageManagers]]
-name = "Ubuntu packages"
+name = "Ubuntu"
 desc = ""
 href = "https://packages.ubuntu.com"
 
-[[configurationLanguages]]
+[[configurationApis]]
 name = "Yaml"
 desc = ""
 href = "https://yaml.org/"
 
-[[configurationLanguages]]
+[[configurationApis]]
 name = "JSON"
 desc = ""
 href = "https://www.json.org/json-en.html"
 
-[[configurationLanguages]]
+[[configurationApis]]
 name = "TOML"
 desc = ""
 href = "https://toml.io/en/latest"
@@ -227,6 +267,16 @@ desc = "Apple's mobile operating system."
 href = "https://www.apple.com/ios/"
 
 [[operatingSystems]]
+name = "Arch"
+desc = ""
+href = "https://wiki.archlinux.org"
+
+[[operatingSystems]]
+name = "Ubuntu Server"
+desc = ""
+href = "https://ubuntu.com/server/docs/how-to"
+
+[[operatingSystems]]
 name = "Linux"
 desc = "A family of open-source Unix-like operating systems"
 href = "https://en.wikipedia.org/wiki/Linux"
@@ -253,7 +303,7 @@ href = "https://docs.cloudfoundry.org"
 
 [[devopsCloud]]
 name = "Open Service Broker API"
-desc = "The Open Service Broker API defines an HTTP(S) interface between Platforms & Service Brokers."
+desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
 href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
 
 [[devopsCloud]]
@@ -262,9 +312,14 @@ desc = "The combined practices of continuous integration, continuous delivery, &
 href = "https://en.wikipedia.org/wiki/CI/CD"
 
 [[devopsCloud]]
-name = "monitoring & alerting"
+name = "Prometheus"
 desc = ""
-href = "https://www.oreilly.com/library/view/practical-monitoring/9781491957349/"
+href = "https://prometheus.io/docs/prometheus/latest/getting_started/"
+
+[[devopsCloud]]
+name = "Grafana"
+desc = ""
+href = "https://grafana.com/docs/grafana/latest/"
 
 [[devopsCloud]]
 name = "GitHub Actions"
@@ -275,3 +330,28 @@ href = "https://docs.github.com/en/actions"
 name = "CircleCI"
 desc = ""
 href = "https://circleci.com/docs/configuration-reference/"
+
+[[devopsCloud]]
+name = "Docker"
+desc = ""
+href = "https://docs.docker.com/reference/"
+
+[[configurationApis]]
+name = "yabai"
+desc = ""
+href = "https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#config"
+
+[[configurationApis]]
+name = "SketchyBar"
+desc = ""
+href = "https://felixkratz.github.io/SketchyBar/config/bar"
+
+[[configurationApis]]
+name = "Starship"
+desc = ""
+href = "https://starship.rs/config/"
+
+[[languages]]
+name = "PHP"
+desc = ""
+href = "https://www.php.net/manual/en/"

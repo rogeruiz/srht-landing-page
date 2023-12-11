@@ -26,8 +26,8 @@ import Footer from './components/footer'
 
 const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, & I've
 been a software engineer since 2011. I've been working remotely since 2013. I
-use this page as a personal homepage, but it's also useful as a way to see what
-I have experties in as well.`
+use this page as a personal homepage. It's also an active list of the
+technologies that I have experience working with.`
 
 export default async function Home() {
   const linkData: Dailies = await getDailys()
@@ -47,10 +47,7 @@ export default async function Home() {
           data={skillData.frameworksLibraries}
         />
         <List title="package managers" data={skillData.packageManagers} />
-        <List
-          title="configuration languages"
-          data={skillData.configurationLanguages}
-        />
+        <List title="configuration & api" data={skillData.configurationApis} />
         <List title="testing" data={skillData.testing} />
         <List title="version control" data={skillData.versionControl} />
         <List title="operating systems" data={skillData.operatingSystems} />

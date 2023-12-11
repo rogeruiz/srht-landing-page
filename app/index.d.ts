@@ -28,7 +28,7 @@ export interface Skills {
   languages: Item[]
   frameworksLibraries: Item[]
   packageManagers: Item[]
-  configurationLanguages: Item[]
+  configurationApis: Item[]
   testing: Item[]
   versionControl: Item[]
   operatingSystems: Item[]
