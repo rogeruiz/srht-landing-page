@@ -14,52 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import type { Dailies, Skills, Fortunes } from './index.d.ts'
+
 import dynamic from 'next/dynamic'
+const Fortune = dynamic(() => import('./components/fortune'), { ssr: false })
 
 import Image from 'next/image'
 import List from './components/list'
-// import Fortune from './components/fortune'
-const Fortune = dynamic(() => import('./components/fortune'), { ssr: false })
 import { getDailys, getSkills, getFortunes } from './lib/fetch-links'
+import Footer from './components/footer'
 
-const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, and I've
-been a software engineer since 2011. I started working remotely back in 2013
-too and really enjoy the freedom and responsibility of working asynchronously.
-You've landed on my little page. I use this page as a personal homepage, but it
-also includes a number of other details like programming langauges & frameworks
-that I have experience in as well.`
-
-interface Quote {
-  author: string
-  say: string
-}
-
-interface Fortunes extends Array<Quote> {}
-
-interface Link {
-  name: string
-  href: string
-  desc: string
-}
-
-interface Dailies {
-  daily: Link[]
-}
-interface Skills {
-  languages: Link[]
-  frameworksLibraries: Link[]
-  packageManagers: Link[]
-  configurationLanguages: Link[]
-}
-
-interface Quote {
-  say: string
-  author: string
-}
-
-interface Fortunes {
-  quotes: Quote[]
-}
+const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, & I've
+been a software engineer since 2011. I've been working remotely since 2013.
+I use this page as a personal homepage, but it also includes a number of other
+details like programming langauges & frameworks that I have experience in as
+well.`
 
 export default async function Home() {
   const linkData: Dailies = await getDailys()
@@ -83,17 +52,25 @@ export default async function Home() {
           title="configuration languages"
           data={skillData.configurationLanguages}
         />
+        <List title="testing" data={skillData.testing} />
+        <List title="version control" data={skillData.versionControl} />
+        <List title="operating systems" data={skillData.operatingSystems} />
+        <List title="devops & cloud" data={skillData.devopsCloud} />
       </section>
       <section className="lg:grid lg:grid-cols-2 lg:gap-4">
-        <hr className="mb-10 h-px bg-surface2 border-0 lg:mb-2 lg:col-start-2" />
-        <Image
-          className="float-left mr-6 mb-6 lg:mb-0 lg:col-start-2 rounded-full"
-          width="120"
-          height="120"
-          src="images/headshot-2021.jpg"
-          alt="Roger Steve Ruiz headshot"
-        />
-        <p className="lg:col-start-2">{description}</p>
+        <section className="lg:col-start-2 flex flex-col lg:flex-row">
+          <hr className="lg:hidden mb-5 h-px bg-surface2 border-0" />
+          <Image
+            className="mb-6 self-center flex-none lg:self-start lg:mr-6 rounded-full"
+            width="128"
+            height="128"
+            src="images/headshot-2021.jpg"
+            alt="Roger Steve Ruiz headshot"
+          />
+          <p className="col-start-2">{description}</p>
+          <hr className="lg:hidden mt-5 h-px bg-surface2 border-0" />
+        </section>
+        <Footer />
       </section>
     </main>
   )

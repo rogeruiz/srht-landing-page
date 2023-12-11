@@ -16,7 +16,7 @@
 
 [[languages]]
 name = "Bash"
-desc = ""
+desc = """I use Bash to solve a lot of my automation needs because it's convienent and mostly runs everywhere. It's useful to sketch things out in a Bash script before reaching for other languages. This was my first exposure to the Unix philosophy and I've loved it ever since."""
 href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
 
 [[languages]]
@@ -50,9 +50,19 @@ desc = ""
 href = "https://golang.org/"
 
 [[languages]]
-name = "Swift"
+name = "osaScript"
 desc = ""
-href = "https://developer.apple.com/documentation/swift/swift-standard-library"
+href = "https://developer.apple.com/documentation/uniformtypeidentifiers/uttype/3551541-osascript"
+
+[[languages]]
+name = "Lua"
+desc = ""
+href = "http://www.lua.org/docs.html"
+
+[[languages]]
+name = "Terraform"
+desc = ""
+href = "https://developer.hashicorp.com/terraform/docs"
 
 [[frameworksLibraries]]
 name = "React"
@@ -113,8 +123,13 @@ href = "https://brew.sh/blog/"
 
 [[packageManagers]]
 name = "Arch Linux packages"
-desc = """The Arch Linux distrobution package manager."""
+desc = """The Arch Linux distribution package manager."""
 href = "https://archlinux.org/packages/"
+
+[[packageManagers]]
+name = "Ubuntu packages"
+desc = ""
+href = "https://packages.ubuntu.com"
 
 [[configurationLanguages]]
 name = "Yaml"
@@ -126,14 +141,137 @@ name = "JSON"
 desc = ""
 href = "https://www.json.org/json-en.html"
 
-
 [[configurationLanguages]]
 name = "TOML"
 desc = ""
 href = "https://toml.io/en/latest"
 
-[[buildSystems]]
+[[devopsCloud]]
 name = "Kubernetes"
 desc = """"""
 href = "https://kubernetes.io/docs/"
 
+[[testing]]
+name = "Regular expressions"
+desc = """I learned all I know about regular expressions from the BBEdit documentation in my first year programming. Turns out it was just the Pearl documentation for regular expressions."""
+href = "https://regexr.com"
+
+[[testing]]
+name = "Cypress"
+desc = ""
+href = "https://on.cypress.io/"
+
+[[testing]]
+name = "Playwright"
+desc = ""
+href = "https://playwright.dev/docs/intro"
+
+[[testing]]
+name = "Jasmine"
+desc = ""
+href = "https://jasmine.github.io/pages/docs_home.html"
+
+[[testing]]
+name = "Pytest"
+desc = ""
+href = "https://docs.pytest.org/en/7.1.x/reference/reference.html"
+
+[[testing]]
+name = "Jest"
+desc = ""
+href = "https://jestjs.io/docs/getting-started"
+
+[[versionControl]]
+name = "Git"
+desc = "A distributed version control system."
+href = "https://git-scm.com/doc"
+
+[[versionControl]]
+name = "SVN"
+desc = "A centralized version control system."
+href = "https://subversion.apache.org/docs/"
+
+[[versionControl]]
+name = "Mercurial"
+desc = "Another distributed version control system."
+href = "https://book.mercurial-scm.org/read/"
+
+[[versionControl]]
+name = "GitHub"
+desc = ""
+href = "https://docs.github.com/en"
+
+[[versionControl]]
+name = "GitLab"
+desc = ""
+href = "https://docs.gitlab.com"
+
+[[versionControl]]
+name = "sourcehut git"
+desc = ""
+href = "https://man.sr.ht/git.sr.ht/"
+
+[[versionControl]]
+name = "sourcehut mercurial"
+desc = ""
+href = "https://man.sr.ht/hg.sr.ht/"
+
+[[operatingSystems]]
+name = "macOS"
+desc = "Apple's desktop operating system."
+href = "https://www.apple.com/osx/"
+
+[[operatingSystems]]
+name = "iOS"
+desc = "Apple's mobile operating system."
+href = "https://www.apple.com/ios/"
+
+[[operatingSystems]]
+name = "Linux"
+desc = "A family of open-source Unix-like operating systems"
+href = "https://en.wikipedia.org/wiki/Linux"
+
+[[operatingSystems]]
+name = "Unix"
+desc = "An operating system that started development in 1969 at Bell Labs research center characterized by a modular design that is sometimes called the 'Unix philosophy'."
+href = "https://en.wikipedia.org/wiki/Unix"
+
+[[devopsCloud]]
+name = "AWS"
+desc = "Amazon Web Services is an Amazon cloud services provider."
+href = "https://docs.aws.amazon.com"
+
+[[devopsCloud]]
+name = "Azure"
+desc = "Azure is a Microsoft cloud services provider."
+href = "https://learn.microsoft.com/en-us/azure/"
+
+[[devopsCloud]]
+name = "Cloud Foundry"
+desc = ""
+href = "https://docs.cloudfoundry.org"
+
+[[devopsCloud]]
+name = "Open Service Broker API"
+desc = "The Open Service Broker API defines an HTTP(S) interface between Platforms & Service Brokers."
+href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
+
+[[devopsCloud]]
+name = "CI/CD"
+desc = "The combined practices of continuous integration, continuous delivery, & continuous deployment."
+href = "https://en.wikipedia.org/wiki/CI/CD"
+
+[[devopsCloud]]
+name = "monitoring & alerting"
+desc = ""
+href = "https://www.oreilly.com/library/view/practical-monitoring/9781491957349/"
+
+[[devopsCloud]]
+name = "GitHub Actions"
+desc = ""
+href = "https://docs.github.com/en/actions"
+
+[[devopsCloud]]
+name = "CircleCI"
+desc = ""
+href = "https://circleci.com/docs/configuration-reference/"

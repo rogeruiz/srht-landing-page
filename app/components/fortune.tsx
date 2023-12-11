@@ -15,29 +15,26 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 'use client'
 
-interface Quote {
-  say: string
-  author: string
-}
+import type { Quote } from '../index.d.ts'
 
 export default function Fortune({ data }: { data: Quote[] }) {
-  type Fortune = {
-    say: string
-    author: string
-  }
+  const idx: number = Math.floor(Math.random() * data.length)
 
-  let idx: number = Math.floor(Math.random() * data.length)
-
-  let quote: Fortune = data[idx]
+  const quote: Quote = data[idx]
 
   return (
-    <div className="bg-rosewater border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
-      <blockquote className="text-mantle shadow-surface2 text-xl md:text-lg lg:text-xl font-sans uppercase">
+    <div className="bg-surface0 border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
+      <blockquote className="text-subtext1 shadow-surface2 text-xl md:text-lg lg:text-xl font-sans uppercase">
         {quote.say}
       </blockquote>
-      {quote.author && (
-        <h5 className="text-mantle font-display text-lg mt-5">
-          — {quote.author}
+      {(quote.response || quote.author) && (
+        <h5 className="text-overlay2 font-display text-lg mt-5">
+          {quote.author && (
+            <>
+              <code className="text-teal"> </code> {quote.author}
+            </>
+          )}
+          {quote.response && quote.response}
         </h5>
       )}
     </div>

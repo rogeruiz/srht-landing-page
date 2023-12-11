@@ -164,281 +164,279 @@ author = """Andrew Gerrand"""
 
 [[quotes]]
 say = """Care about your craft."""
-author = """Why spend your life developing software unless you care about doing it well?"""
+response = """Why spend your life developing software unless you care about doing it well?"""
 
 [[quotes]]
 say = """Provide options, don't make lame excuses."""
-author = """Instead of excuses, provide options. Don't say it can't be done; explain what can be done."""
+response = """Instead of excuses, provide options. Don't say it can't be done; explain what can be done."""
 
 [[quotes]]
 say = """Be a catalyst for change."""
-author = """You can't force change on people. Instead, show them how the future might be and help them participate in creating it."""
+response = """You can't force change on people. Instead, show them how the future might be and help them participate in creating it."""
 
 [[quotes]]
 say = """Make quality a requirements issue."""
-author = """Involve your users in determining the project's real quality requirements."""
+response = """Involve your users in determining the project's real quality requirements."""
 
 [[quotes]]
 say = """Critically analyze what you read and hear."""
-author = """Don't be swayed by vendors, media hype, or dogma. Analyze information in terms of you and your project."""
+response = """Don't be swayed by vendors, media hype, or dogma. Analyze information in terms of you and your project."""
 
 [[quotes]]
 say = """DRY - Don't Repeat Yourself."""
-author = """Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."""
+response = """Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."""
 
 [[quotes]]
 say = """Eliminate effects between unrelated things."""
-author = """Design components that are self-contained, independent, and have a single, well-defined purpose."""
+response = """Design components that are self-contained, independent, and have a single, well-defined purpose."""
 
 [[quotes]]
 say = """Use tracer bullets to find the target."""
-author = """Tracer bullets let you home in on your target by trying things and seeing how close they land."""
+response = """Tracer bullets let you home in on your target by trying things and seeing how close they land."""
 
 [[quotes]]
 say = """Program close to the problem domain."""
-author = """Design and code in your user's language."""
+response = """Design and code in your user's language."""
 
 [[quotes]]
 say = """Iterate the schedule with the code."""
-author = """Use experience you gain as you implement to refine the project time scales."""
+response = """Use experience you gain as you implement to refine the project time scales."""
 
 [[quotes]]
 say = """Use the power of command shells."""
-author = """Use the shell when graphical user interfaces don't cut it."""
+response = """Use the shell when graphical user interfaces don't cut it."""
 
 [[quotes]]
 say = """Always use source code control."""
-author = """Source code control is a time machine for your work - you can go back."""
+response = """Source code control is a time machine for your work - you can go back."""
 
 [[quotes]]
 say = """Don't panic when debugging"""
-author = """Take a deep breath and THINK! about what could be causing the bug."""
+response = """Take a deep breath and THINK! about what could be causing the bug."""
 
 [[quotes]]
 say = """Don't assume it - prove it."""
-author = """Prove your assumptions in the actual environment - with real data and boundary conditions."""
+response = """Prove your assumptions in the actual environment - with real data and boundary conditions."""
 
 [[quotes]]
 say = """Write code that writes code."""
-author = """Code generators increase your productivity and help avoid duplication."""
+response = """Code generators increase your productivity and help avoid duplication."""
 
 [[quotes]]
 say = """Design With contracts."""
-author = """Use contracts to document and verify that code does no more and no less than it claims to do."""
+response = """Use contracts to document and verify that code does no more and no less than it claims to do."""
 
 [[quotes]]
 say = """Use assertions to prevent the impossible."""
-author = """Assertions validate your assumptions. Use them to protect your code from an uncertain world."""
+response = """Assertions validate your assumptions. Use them to protect your code from an uncertain world."""
 
 [[quotes]]
 say = """Finish what you start."""
-author = """Where possible, the routine or object that allocates a resource should be responsible for deallocating it."""
+response = """Where possible, the routine or object that allocates a resource should be responsible for deallocating it."""
 
 [[quotes]]
 say = """Configure, don't integrate."""
-author = """Implement technology choices for an application as configuration options, not through integration or engineering."""
+response = """Implement technology choices for an application as configuration options, not through integration or engineering."""
 
 [[quotes]]
 say = """Analyze workflow to improve concurrency."""
-author = """Exploit concurrency in your user's workflow."""
+response = """Exploit concurrency in your user's workflow."""
 
 [[quotes]]
 say = """Always design for concurrency."""
-author = """Allow for concurrency, and you'll design cleaner interfaces with fewer assumptions."""
+response = """Allow for concurrency, and you'll design cleaner interfaces with fewer assumptions."""
 
 [[quotes]]
 say = """Use blackboards to coordinate workflow."""
-author = """Use blackboards to coordinate disparate facts and agents, while maintaining independence and isolation among participants."""
+response = """Use blackboards to coordinate disparate facts and agents, while maintaining independence and isolation among participants."""
 
 [[quotes]]
 say = """Estimate the order of your algorithms."""
-author = """Get a feel for how long things are likely to take before you write code."""
+response = """Get a feel for how long things are likely to take before you write code."""
 
 [[quotes]]
 say = """Refactor early, refactor often."""
-author = """Just as you might weed and rearrange a garden, rewrite, rework, and re-architect code when it needs it. Fix the root of the problem."""
+response = """Just as you might weed and rearrange a garden, rewrite, rework, and re-architect code when it needs it. Fix the root of the problem."""
 
 [[quotes]]
 say = """Test your software, or your users will."""
-author = """Test ruthlessly. Don't make your users find bugs for you."""
+response = """Test ruthlessly. Don't make your users find bugs for you."""
 
 [[quotes]]
 say = """Don't gather requirements - dig for them."""
-author = """Requirements rarely lie on the surface. They're buried deep beneath layers of assumptions, misconceptions, and politics."""
+response = """Requirements rarely lie on the surface. They're buried deep beneath layers of assumptions, misconceptions, and politics."""
 
 [[quotes]]
 say = """Abstractions live longer than details."""
-author = """Invest in the abstraction, not the implementation. Abstractions can survive the barrage of changes from different implementations and new technologies."""
+response = """Invest in the abstraction, not the implementation. Abstractions can survive the barrage of changes from different implementations and new technologies."""
 
 [[quotes]]
 say = """Don't think outside the box - find the box."""
-author = """When faced with an impossible problem, identify the real
-constraints. Ask yourself: "Does it have to be done this way? Does it have to be
-done at all?" """
+response = """When faced with an impossible problem, identify the real constraints. Ask yourself: "Does it have to be done this way? Does it have to be done at all?" """
 
 [[quotes]]
 say = """Some things are better done than described."""
-author = """Don't fall into the specification spiral - at some point you need to start coding."""
+response = """Don't fall into the specification spiral - at some point you need to start coding."""
 
 [[quotes]]
 say = """Costly tools don't produce better designs."""
-author = """Beware of vendor hype, industry dogma, and the aura of the price tag. Judge tools on their merits."""
+response = """Beware of vendor hype, industry dogma, and the aura of the price tag. Judge tools on their merits."""
 
 [[quotes]]
 say = """Don't use manual procedures."""
-author = """A shell script or batch file will execute the same instructions, in the same order, time after time."""
+response = """A shell script or batch file will execute the same instructions, in the same order, time after time."""
 
 [[quotes]]
 say = """Coding ain't done 'til all the Tests run."""
-author = """'Nuff said."""
+response = """'Nuff said."""
 
 [[quotes]]
 say = """Test state coverage, not code coverage."""
-author = """Identify and test significant program states. Just testing lines of code isn't enough."""
+response = """Identify and test significant program states. Just testing lines of code isn't enough."""
 
 [[quotes]]
 say = """English is just a programming language."""
-author = """Write documents as you would write code: honor the DRY principle, use metadata, MVC, automatic generation, and so on."""
+response = """Write documents as you would write code: honor the DRY principle, use metadata, MVC, automatic generation, and so on."""
 
 [[quotes]]
 say = """Gently exceed your users' expectations."""
-author = """Come to understand your users' expectations, then deliver just that little bit more."""
+response = """Come to understand your users' expectations, then deliver just that little bit more."""
 
 [[quotes]]
 say = """Think about your work."""
-author = """Turn off the autopilot and take control. Constantly critique and appraise your work."""
+response = """Turn off the autopilot and take control. Constantly critique and appraise your work."""
 
 [[quotes]]
 say = """Don't live with broken windows."""
-author = """Fix bad designs, wrong decisions, and poor code when you see them."""
+response = """Fix bad designs, wrong decisions, and poor code when you see them."""
 
 [[quotes]]
 say = """Remember the big picture."""
-author = """Don't get so engrossed in the details that you forget to check what's happening around you."""
+response = """Don't get so engrossed in the details that you forget to check what's happening around you."""
 
 [[quotes]]
 say = """Invest regularly in your knowledge portfolio."""
-author = """Make learning a habit."""
+response = """Make learning a habit."""
 
 [[quotes]]
 say = """It's both what you say and the way you say it."""
-author = """There's no point in having great ideas if you don't communicate them effectively."""
+response = """There's no point in having great ideas if you don't communicate them effectively."""
 
 [[quotes]]
 say = """Make it easy to reuse."""
-author = """If it's easy to reuse, people will. Create an environment that supports reuse."""
+response = """If it's easy to reuse, people will. Create an environment that supports reuse."""
 
 [[quotes]]
 say = """There are no final decisions."""
-author = """No decision is cast in stone. Instead, consider each as being written in the sand at the beach, and plan for change."""
+response = """No decision is cast in stone. Instead, consider each as being written in the sand at the beach, and plan for change."""
 
 [[quotes]]
 say = """Prototype to learn."""
-author = """Prototyping is a learning experience. Its value lies not in the code you produce, but in the lessons you learn."""
+response = """Prototyping is a learning experience. Its value lies not in the code you produce, but in the lessons you learn."""
 
 [[quotes]]
 say = """Estimate to avoid surprises."""
-author = """Estimate before you start. You'll spot potential problems up front."""
+response = """Estimate before you start. You'll spot potential problems up front."""
 
 [[quotes]]
 say = """Keep knowledge in plain text."""
-author = """Plain text won't become obsolete. It helps leverage your work and simplifies debugging and testing."""
+response = """Plain text won't become obsolete. It helps leverage your work and simplifies debugging and testing."""
 
 [[quotes]]
 say = """Use a single editor well."""
-author = """The editor should be an extension of your hand; make sure your editor is configurable, extensible, and programmable."""
+response = """The editor should be an extension of your hand; make sure your editor is configurable, extensible, and programmable."""
 
 [[quotes]]
 say = """Fix the problem, not the blame."""
-author = """It doesn't really matter whether the bug is your fault or someone else's - it is still your problem, and it still needs to be fixed."""
+response = """It doesn't really matter whether the bug is your fault or someone else's - it is still your problem, and it still needs to be fixed."""
 
 [[quotes]]
 say = """"select" isn't broken."""
-author = """It is rare to find a bug in the OS or the compiler, or even a third-party product or library. The bug is most likely in the application."""
+response = """It is rare to find a bug in the OS or the compiler, or even a third-party product or library. The bug is most likely in the application."""
 
 [[quotes]]
 say = """Learn a text manipulation language."""
-author = """You spend a large part of each day working with text. Why not have the computer do some of it for you?"""
+response = """You spend a large part of each day working with text. Why not have the computer do some of it for you?"""
 
 [[quotes]]
 say = """You can't write perfect software."""
-author = """Software can't be perfect. Protect your code and users from the inevitable errors."""
+response = """Software can't be perfect. Protect your code and users from the inevitable errors."""
 
 [[quotes]]
 say = """Crash early."""
-author = """A dead program normally does a lot less damage than a crippled one."""
+response = """A dead program normally does a lot less damage than a crippled one."""
 
 [[quotes]]
 say = """Use exceptions for exceptional problems."""
-author = """Exceptions can suffer from all the readability and maintainability problems of classic spaghetti code. Reserve exceptions for exceptional things."""
+response = """Exceptions can suffer from all the readability and maintainability problems of classic spaghetti code. Reserve exceptions for exceptional things."""
 
 [[quotes]]
 say = """Minimize coupling between modules."""
-author = """Avoid coupling by writing "shy" code and applying the Law of Demeter."""
+response = """Avoid coupling by writing "shy" code and applying the Law of Demeter."""
 
 [[quotes]]
 say = """Put abstractions in code, details in metadata."""
-author = """Program for the general case, and put the specifics outside the compiled code base."""
+response = """Program for the general case, and put the specifics outside the compiled code base."""
 
 [[quotes]]
 say = """Design using services."""
-author = """Design in terms of services-independent, concurrent objects behind well-defined, consistent interfaces."""
+response = """Design in terms of services-independent, concurrent objects behind well-defined, consistent interfaces."""
 
 [[quotes]]
 say = """Separate views from models."""
-author = """Gain flexibility at low cost by designing your application in terms of models and views."""
+response = """Gain flexibility at low cost by designing your application in terms of models and views."""
 
 [[quotes]]
 say = """Don't program by coincidence."""
-author = """Rely only on reliable things. Beware of accidental complexity, and don't confuse a happy coincidence with a purposeful plan."""
+response = """Rely only on reliable things. Beware of accidental complexity, and don't confuse a happy coincidence with a purposeful plan."""
 
 [[quotes]]
 say = """Test your estimates."""
-author = """Mathematical analysis of algorithms doesn't tell you everything. Try timing your code in its target environment."""
+response = """Mathematical analysis of algorithms doesn't tell you everything. Try timing your code in its target environment."""
 
 [[quotes]]
 say = """Design to test."""
-author = """Start thinking about testing before you write a line of code."""
+response = """Start thinking about testing before you write a line of code."""
 
 [[quotes]]
 say = """Don't use wizard code you don't understand."""
-author = """Wizards can generate reams of code. Make sure you understand all of it before you incorporate it into your project."""
+response = """Wizards can generate reams of code. Make sure you understand all of it before you incorporate it into your project."""
 
 [[quotes]]
 say = """Work with a user to think like a user."""
-author = """It's the best way to gain insight into how the system will really be used."""
+response = """It's the best way to gain insight into how the system will really be used."""
 
 [[quotes]]
 say = """Use a project glossary."""
-author = """Create and maintain a single source of all the specific terms and vocabulary for a project."""
+response = """Create and maintain a single source of all the specific terms and vocabulary for a project."""
 
 [[quotes]]
 say = """Start when you're ready."""
-author = """You've been building experience all your life. Don't ignore niggling doubts."""
+response = """You've been building experience all your life. Don't ignore petty doubts."""
 
 [[quotes]]
-say = """Don't be a slave to formal methods."""
-author = """Don't blindly adopt any technique without putting it into the context of your development practices and capabilities."""
+say = """Don't be a zealot of formal methods."""
+response = """Don't blindly adopt any technique without putting it into the context of your development practices and capabilities."""
 
 [[quotes]]
 say = """Organize teams around functionality."""
-author = """Don't separate designers from coders, testers from data modelers. Build teams the way you build code."""
+response = """Don't separate designers from coders, testers from data modelers. Build teams the way you build code."""
 
 [[quotes]]
 say = """Test early. Test often. Test automatically."""
-author = """Tests that run with every build are much more effective than test plans that sit on a shelf."""
+response = """Tests that run with every build are much more effective than test plans that sit on a shelf."""
 
 [[quotes]]
 say = """Use saboteurs to test your testing."""
-author = """Introduce bugs on purpose in a separate copy of the source to verify that testing will catch them."""
+response = """Introduce bugs on purpose in a separate copy of the source to verify that testing will catch them."""
 
 [[quotes]]
 say = """Find bugs once."""
-author = """Once a human tester finds a bug, it should be the last time a human tester finds that bug. Automatic tests should check for it from then on."""
+response = """Once a human tester finds a bug, it should be the last time a human tester finds that bug. Automatic tests should check for it from then on."""
 
 [[quotes]]
 say = """Sign your work."""
-author = """Craftsmen of an earlier age were proud to sign their work. You should be, too."""
+response = """Craftsmen of an earlier age were proud to sign their work. You should be, too."""
 
 [[quotes]]
 say = """Think twice, code once."""
@@ -473,7 +471,7 @@ say = """The city's central computer told you? R2D2, you know better than to tru
 author = """C3PO"""
 
 [[quotes]]
-say = """Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves."""
+say = """Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of dependencies."""
 author = """Alan Kay"""
 
 [[quotes]]
@@ -530,7 +528,7 @@ author = """Bill Gates"""
 
 [[quotes]]
 say = """Don't worry if it doesn't work right. If everything did, you'd be out of a job."""
-author = """Mosher's Law of Software Engineering"""
+response = """Mosher's Law of Software Engineering"""
 
 [[quotes]]
 say = """A LISP programmer knows the value of everything, but the cost of nothing."""
@@ -574,7 +572,7 @@ author = """Paul Graham"""
 
 [[quotes]]
 say = """Question: How does a large software project get to be one year late?"""
-author = """Answer: One day at a time!"""
+response = """Answer: One day at a time!"""
 
 [[quotes]]
 say = """The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time."""
