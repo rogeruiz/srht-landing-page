@@ -25,10 +25,9 @@ import { getDailys, getSkills, getFortunes } from './lib/fetch-links'
 import Footer from './components/footer'
 
 const description = `Hi! My name's Roger Steve Ruiz, pronouns he/him, & I've
-been a software engineer since 2011. I've been working remotely since 2013.
-I use this page as a personal homepage, but it also includes a number of other
-details like programming langauges & frameworks that I have experience in as
-well.`
+been a software engineer since 2011. I've been working remotely since 2013. I
+use this page as a personal homepage, but it's also useful as a way to see what
+I have experties in as well.`
 
 export default async function Home() {
   const linkData: Dailies = await getDailys()
