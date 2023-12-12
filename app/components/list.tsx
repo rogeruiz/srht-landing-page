@@ -21,10 +21,10 @@ import type { Item } from '../index.d.ts'
 export default function List({ title, data }: { title: string; data: Item[] }) {
   const listItems = data.map((li: Item, idx: number) => {
     return (
-      <li key={idx} className="list-none md:hover:list-disc my-4 md:my-2">
+      <li key={idx} className="list-none md:hover:list-disc my-4">
         {li.href && (
           <Link
-            className="underline text-yellow hover:text-teal visited:text-lavender block"
+            className="underline text-yellow hover:text-teal hover:no-underline visited:text-lavender block"
             href={li.href}
             title={li.desc}
             target="_blank"
@@ -54,15 +54,19 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
 
   return (
     <div className="bg-mantle rounded mb-10 lg:mb-0">
-      <section className={`${colors[idx][0]} text-base px-8 pt-8 pb-2 mb-5`}>
+      <section
+        className={`${colors[idx][0]} text-base px-8 pt-8 pb-8 mb-5 max-w-full`}
+      >
         <h4
-          className={`${colors[idx][1]} text-2xl md:text-lg lg:text-xl font-display uppercase mb-5 lg:h-14`}
+          className={`${colors[idx][1]} text-2xl md:text-lg lg:text-xl font-display uppercase lg:h-14 text-center`}
         >
           {title}
         </h4>
       </section>
       {data && (
-        <ul className="px-8 pb-12 md:grid md:grid-cols-2">{listItems}</ul>
+        <section className="text-center lg:text-left">
+          <ul className="px-8 pb-12 lg:grid lg:grid-cols-2">{listItems}</ul>
+        </section>
       )}
     </div>
   )

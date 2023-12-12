@@ -247,14 +247,9 @@ desc = ""
 href = "https://docs.gitlab.com"
 
 [[versionControl]]
-name = "sourcehut git"
+name = "git-send-email"
 desc = ""
-href = "https://man.sr.ht/git.sr.ht/"
-
-[[versionControl]]
-name = "sourcehut mercurial"
-desc = ""
-href = "https://man.sr.ht/hg.sr.ht/"
+href = "https://git-send-email.io"
 
 [[operatingSystems]]
 name = "macOS"
@@ -302,7 +297,7 @@ desc = ""
 href = "https://docs.cloudfoundry.org"
 
 [[devopsCloud]]
-name = "Open Service Broker API"
+name = "Service Broker API"
 desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
 href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
 
