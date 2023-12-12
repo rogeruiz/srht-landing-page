@@ -19,7 +19,7 @@ name = "Pinboard"
 desc = """It's social bookmarking for introverts. I use this for a lot of my own
 bookmarking. Some of my bookmarks from there may even end up here if it's useful
 enough to use every day."""
-href = "https://pinboard.in/"
+href = "https://pinboard.in/popular/"
 
 [[daily]]
 name = "DuckDuckGo"
