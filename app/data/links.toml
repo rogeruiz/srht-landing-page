@@ -35,7 +35,7 @@ relax"""
 
 [[daily]]
 name = "Exercism"
-href = "https://exercism.org/"
+href = "https://exercism.org/tracks"
 desc = """
 I practice coding & mentoring while exploring new languages on Exercism
 regularly."""
@@ -60,19 +60,19 @@ discussion."""
 
 [[daily]]
 name = "sourcehut"
-href = "https://sr.ht/"
+href = "https://sr.ht/projects"
 desc = """It's a collection of tools useful for software development. The
 hacker's forge!"""
 
 [[daily]]
 name = "GitHub"
-href = "https://github.com/"
+href = "https://github.com/explore"
 desc = """I check a lot of things out on GitHub and use it to explore projects
 in OSS."""
 
 [[daily]]
 name = "Gists"
-href = "https://gist.github.com/"
+href = "https://gist.github.com/discover"
 desc = """This is GitHub's pastebin-clone where I post a lot of little
 interesting snippets from time to time. I was more active here earlier in my
 career"""
@@ -85,7 +85,7 @@ website disguised as a townsquare."""
 
 [[daily]]
 name = "Goodreads"
-href = "https://www.goodreads.com/"
+href = "https://www.goodreads.com/explore"
 desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
 
 [[daily]]
