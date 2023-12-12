@@ -22,16 +22,32 @@ export default function Fortune({ data }: { data: Quote[] }) {
 
   const quote: Quote = data[idx]
 
+  const colors: string[] = [
+    'text-mauve',
+    'text-yellow',
+    'text-lavender',
+    'text-teal',
+    'text-flamingo',
+    'text-sky',
+    'text-rosewater',
+    'text-sapphire',
+    'text-maroon'
+  ]
+
+  const jdx: number = Math.floor(Math.random() * colors.length)
+
   return (
     <div className="bg-surface0 border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
-      <blockquote className="text-subtext1 shadow-surface2 text-xl md:text-lg lg:text-xl font-sans uppercase">
+      <blockquote className="text-subtext1 shadow-surface2 text-lg md:text-3xl font-sans">
         {quote.say}
       </blockquote>
       {(quote.response || quote.author) && (
-        <h5 className="text-overlay2 font-display text-lg mt-5">
+        <h5
+          className={`${colors[jdx]} font-display text-sm md:text-lg mt-5 uppercase`}
+        >
           {quote.author && (
             <>
-              <code className="text-teal"> </code> {quote.author}
+              <code className={colors[jdx]}> </code> {quote.author}
             </>
           )}
           {quote.response && quote.response}
