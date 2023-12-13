@@ -54,11 +54,9 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
 
   return (
     <div className="bg-mantle rounded mb-10 lg:mb-0">
-      <section
-        className={`${colors[idx][0]} text-base px-8 pt-8 pb-8 mb-5 max-w-full`}
-      >
+      <section className={`${colors[idx][0]} text-base px-8 pt-8 pb-8 mb-5`}>
         <h4
-          className={`${colors[idx][1]} text-2xl md:text-lg lg:text-xl font-display uppercase lg:h-14 text-center`}
+          className={`${colors[idx][1]} text-2xl md:text-xl lg:text-3xl font-display uppercase lg:h-20 text-center`}
         >
           {title}
         </h4>
