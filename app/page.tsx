@@ -41,7 +41,7 @@ export default async function Home() {
       </section>
       <section className="md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-3 mb-10">
         <List title="¿que hubo pues?" data={linkData.daily} />
-        <List title="programming languages" data={skillData.languages} />
+        <List title="languages" data={skillData.languages} />
         <List
           title="frameworks & libraries"
           data={skillData.frameworksLibraries}

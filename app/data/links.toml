@@ -76,6 +76,31 @@ href = "https://www.goodreads.com/explore"
 desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
 
 [[daily]]
+name = "Daring Fireball"
+desc = ""
+href = "https://daringfireball.net"
+
+[[daily]]
+name = "Instapaper"
+desc = ""
+href = "https://www.instapaper.com/browse"
+
+[[daily]]
+name = "The Onion"
+desc = ""
+href = "https://www.theonion.com"
+
+[[daily]]
+name = "LessWrong"
+desc = ""
+href = "https://www.lesswrong.com/allPosts?timeframe=daily"
+
+[[daily]]
+name = "Hype Machine"
+desc = ""
+href = "https://hypem.com/latest"
+
+[[daily]]
 name = "My Blog"
 href = "https://write.rog.gr/"
 desc = "This is my personal blog with my writings on software things."
