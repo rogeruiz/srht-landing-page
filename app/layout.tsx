@@ -24,7 +24,7 @@ import Righteuous from './fonts/righteous'
 export const metadata: Metadata = {
   title: 'Roger Steve Ruiz has a landing page',
   description:
-    'This is a simple little landing page which showcases my experience and skills but also I use to navigate around the web. It is literally a home page for me.'
+    'This landing page contains links I go to regularly along with technologies that I am comfortable using.'
 }
 
 export const viewport: Viewport = {
