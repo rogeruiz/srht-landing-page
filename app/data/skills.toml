@@ -370,3 +370,8 @@ href = "https://www.postgresql.org/docs/current/app-psql.html"
 name = "JQL"
 desc = ""
 href = "https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/"
+
+[[configurationApis]]
+name = "Prettier"
+desc = ""
+href = "https://prettier.io/docs/en/"
