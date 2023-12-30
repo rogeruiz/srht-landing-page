@@ -40,7 +40,7 @@ export default function Footer() {
           >
             NextJS
           </Link>
-          , &{' '}
+          ,{' '}
           <Link
             className="underline hover:no-underline"
             href="https://typescript.org"
@@ -49,9 +49,18 @@ export default function Footer() {
           >
             TypeScript
           </Link>
+          , &{' '}
+          <Link
+            className="underline hover:no-underline"
+            href="http://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tailwind CSS
+          </Link>
         </li>
         <li>
-          Deployed on{' '}
+          Automatically deployed on{' '}
           <Link
             className="underline hover:no-underline"
             href="https://srht.site/"

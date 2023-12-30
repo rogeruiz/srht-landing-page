@@ -14,17 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-export interface Item {
+export type Item = {
   name: string
   href: string
   desc: string
 }
 
-export interface Dailies {
+export type Dailies = {
   daily: Item[]
 }
 
-export interface Skills {
+export type Skills = {
   languages: Item[]
   frameworksLibraries: Item[]
   packageManagers: Item[]
@@ -35,12 +35,12 @@ export interface Skills {
   devopsCloud: Item[]
 }
 
-export interface Quote {
+export type Quote = {
   say: string
   author: string
   response: string
 }
 
-export interface Fortunes {
+export type Fortunes = {
   quotes: Quote[]
 }

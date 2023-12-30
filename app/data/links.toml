@@ -16,16 +16,13 @@
 
 [[daily]]
 name = "Pinboard"
-desc = """It's social bookmarking for introverts. I use this for a lot of my own
-bookmarking. Some of my bookmarks from there may even end up here if it's useful
-enough to use every day."""
+desc = """It's social bookmarking for introverts. I use this for a lot of my own bookmarking. Some of my bookmarks from there may even end up here if it's useful enough to use every day."""
 href = "https://pinboard.in/popular/"
 
 [[daily]]
 name = "DuckDuckGo"
 href = "https://ddg.co/"
-desc = """The search engine I love to use. It's got bangs-support (!g, !w, !a,
-etc) for ergonomic search"""
+desc = """The search engine I love to use. It's got bangs-support (!g, !w, !a, etc) for ergonomic search"""
 
 [[daily]]
 name = "Wikipedia"
@@ -36,52 +33,42 @@ relax"""
 [[daily]]
 name = "Exercism"
 href = "https://exercism.org/tracks"
-desc = """
-I practice coding & mentoring while exploring new languages on Exercism
-regularly."""
+desc = """I practice coding & mentoring while exploring new languages on Exercism regularly."""
 
 [[daily]]
-name = "CodeSignal App"
+name = "CodeSignal"
 href = "https://app.codesignal.com/"
-desc = """
-I practice coding puzzles on here every now & then."""
+desc = """I practice coding puzzles on here every now & then."""
 
 [[daily]]
 name = "Hacker News"
 href = "https://news.ycombinator.com/"
-desc = """A link aggregation and discussion platform run by Y Combinator, a tech
-incubator and investing company."""
+desc = """A link aggregation and discussion platform run by Y Combinator, a tech incubator and investing company."""
 
 [[daily]]
 name = "Lobsters"
 href = "https://lobste.rs/"
-desc = """This is a computing-focused community that uses link aggregation and
-discussion."""
+desc = """This is a computing-focused community that uses link aggregation and discussion."""
 
 [[daily]]
 name = "sourcehut"
 href = "https://sr.ht/projects"
-desc = """It's a collection of tools useful for software development. The
-hacker's forge!"""
+desc = """It's a collection of tools useful for software development. The hacker's forge!"""
 
 [[daily]]
 name = "GitHub"
 href = "https://github.com/explore"
-desc = """I check a lot of things out on GitHub and use it to explore projects
-in OSS."""
+desc = """I check a lot of things out on GitHub and use it to explore projects in OSS."""
 
 [[daily]]
 name = "Gists"
 href = "https://gist.github.com/discover"
-desc = """This is GitHub's pastebin-clone where I post a lot of little
-interesting snippets from time to time. I was more active here earlier in my
-career"""
+desc = """This is GitHub's pastebin-clone where I post a lot of little interesting snippets from time to time. I was more active here earlier in my career"""
 
 [[daily]]
 name = "LinkedIn"
 href = "https://www.linkedin.com/"
-desc = """It's the social media website disguised as a "professional" networking
-website disguised as a townsquare."""
+desc = """It's the social media website disguised as a "professional" networking website disguised as a townsquare."""
 
 [[daily]]
 name = "Goodreads"
@@ -89,6 +76,36 @@ href = "https://www.goodreads.com/explore"
 desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
 
 [[daily]]
-name = "write.rog.gr"
+name = "Daring Fireball"
+desc = ""
+href = "https://daringfireball.net"
+
+[[daily]]
+name = "Instapaper"
+desc = ""
+href = "https://www.instapaper.com/browse"
+
+[[daily]]
+name = "The Onion"
+desc = ""
+href = "https://www.theonion.com"
+
+[[daily]]
+name = "LessWrong"
+desc = ""
+href = "https://www.lesswrong.com/allPosts?timeframe=daily"
+
+[[daily]]
+name = "Hype Machine"
+desc = ""
+href = "https://hypem.com/latest"
+
+[[daily]]
+name = "My Blog"
 href = "https://write.rog.gr/"
 desc = "This is my personal blog with my writings on software things."
+
+[[daily]]
+name = "My Résumé"
+href = "https://resume.rog.gr"
+desc = "This is my résumé."

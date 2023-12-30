@@ -186,6 +186,16 @@ name = "TOML"
 desc = ""
 href = "https://toml.io/en/latest"
 
+[[configurationApis]]
+name = "Confluence REST API"
+desc = ""
+href = "https://docs.atlassian.com/atlassian-confluence/REST/5.7.1/"
+
+[[configurationApis]]
+name = "Jira REST API"
+desc = ""
+href = "https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#about"
+
 [[devopsCloud]]
 name = "Kubernetes"
 desc = """"""
@@ -350,3 +360,18 @@ href = "https://starship.rs/config/"
 name = "PHP"
 desc = ""
 href = "https://www.php.net/manual/en/"
+
+[[languages]]
+name = "PostgreSQL"
+desc = ""
+href = "https://www.postgresql.org/docs/current/app-psql.html"
+
+[[languages]]
+name = "JQL"
+desc = ""
+href = "https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/"
+
+[[configurationApis]]
+name = "Prettier"
+desc = ""
+href = "https://prettier.io/docs/en/"
