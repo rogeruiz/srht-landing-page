@@ -145,7 +145,7 @@ desc = ""
 href = "https://laravel.com/docs"
 
 [[packageManagers]]
-name = "NixOS"
+name = "Nixpkgs"
 desc = ""
 href = "https://search.nixos.org/packages"
 
@@ -282,6 +282,11 @@ desc = ""
 href = "https://ubuntu.com/server/docs/how-to"
 
 [[operatingSystems]]
+name = "NixOS"
+desc = ""
+href = "https://nixos.org/manual/nixos/stable/"
+
+[[operatingSystems]]
 name = "Linux"
 desc = "A family of open-source Unix-like operating systems"
 href = "https://en.wikipedia.org/wiki/Linux"
@@ -375,3 +380,8 @@ href = "https://support.atlassian.com/jira-software-cloud/docs/use-advanced-sear
 name = "Prettier"
 desc = ""
 href = "https://prettier.io/docs/en/"
+
+[[langauges]]
+name = "Nix"
+desc = ""
+href = "https://nix.dev/manual/nix/2.18/language/"
