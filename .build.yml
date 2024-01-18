@@ -5,6 +5,7 @@ environment:
   site: rogeruiz.srht.site
 packages:
   - npm
+  - hut
 tasks:
   - install_dependencies: |
       pushd ${project}
@@ -20,5 +21,4 @@ tasks:
       popd
       file site.tar.gz
   - deploy: |
-      acurl -f "https://pages.sr.ht/publish/rog.gr" \
-       -Fcontent=@site.tar.gz
+      hut pages publish -d $site site.tar.gz
