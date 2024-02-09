@@ -34,7 +34,6 @@ const config: Config = {
   plugins: [
     require('@catppuccin/tailwindcss')({
       prefix: false,
-      defaultFlavour: 'mocha',
     }),
   ],
 }

@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={htmlFontCSSVariables}>
-      <body className="mocha bg-base">{children}</body>
+      <body className="latte dark:mocha bg-base">{children}</body>
     </html>
   )
 }
