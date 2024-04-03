@@ -37,7 +37,7 @@ export default function Fortune({ data }: { data: Quote[] }) {
   const jdx: number = Math.floor(Math.random() * colors.length)
 
   return (
-    <div className="bg-surface0 border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
+    <div className="bg-mantle border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
       <blockquote className="text-subtext1 shadow-surface2 text-lg md:text-3xl font-sans">
         {quote.say}
       </blockquote>
