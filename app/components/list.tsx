@@ -41,7 +41,7 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
       >
         {li.href && (
           <Link
-            className="underline text-yellow hover:text-teal hover:no-underline visited:text-lavender block py-2 lg:py-0"
+            className="md:underline text-blue hover:bg-crust lg:hover:bg-transparent hover:no-underline visited:text-mauve block py-4 lg:py-0 rounded-lg"
             href={li.href}
             title={li.desc}
             target="_blank"
@@ -56,17 +56,18 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
   })
 
   return (
-    <div className="bg-mantle rounded mb-10 lg:mb-0">
-      <section className={`${colors[cdx][0]} text-base px-8 pt-8 pb-8 mb-5`}>
+    <div className="mb-10 lg:mb-px">
+      <section className={`${colors[cdx][0]} text-base px-8 py-8 rounded-t-xl`}>
         <h4
-          className={`${colors[cdx][1]} text-2xl md:text-xl lg:text-3xl font-display uppercase lg:h-20 text-center`}
+          id={`${title.replace('/', '')}`}
+          className={`${colors[cdx][1]} text-2xl md:text-xl font-mono lg:text-3xl lowercase text-center py-0`}
         >
           {title}
         </h4>
       </section>
       {data && (
-        <section className="text-center lg:text-left">
-          <ul className="px-8 pb-12">{listItems}</ul>
+        <section className="text-center lg:text-left rounded-b-xl pt-1 bg-mantle">
+          <ul className="px-8 pb-6">{listItems}</ul>
         </section>
       )}
     </div>

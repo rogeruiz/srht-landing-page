@@ -39,19 +39,19 @@ export default async function Home() {
       <section className="flex flex-col items-center justify-between mb-10">
         <Fortune data={fortuneData.quotes} />
       </section>
-      <section className="md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-3 mb-10">
-        <List title="¿que hubo pues?" data={linkData.daily} />
-        <List title="languages" data={skillData.languages} />
+      <section className="md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-6 mb-10">
+        <List title="/href" data={linkData.daily} />
+        <List title="/lang" data={skillData.languages} />
         <List
-          title="frameworks & libraries"
+          title="/lib"
           data={skillData.frameworksLibraries}
         />
-        <List title="package managers" data={skillData.packageManagers} />
-        <List title="configuration & api" data={skillData.configurationApis} />
-        <List title="testing" data={skillData.testing} />
-        <List title="version control" data={skillData.versionControl} />
-        <List title="operating systems" data={skillData.operatingSystems} />
-        <List title="devops & cloud" data={skillData.devopsCloud} />
+        <List title="/pkgs" data={skillData.packageManagers} />
+        <List title="/api" data={skillData.configurationApis} />
+        <List title="/test" data={skillData.testing} />
+        <List title="/vcs" data={skillData.versionControl} />
+        <List title="/os" data={skillData.operatingSystems} />
+        <List title="/cloud" data={skillData.devopsCloud} />
       </section>
       <section className="lg:grid lg:grid-cols-2 lg:gap-4">
         <section className="lg:col-start-2 flex flex-col lg:flex-row">
