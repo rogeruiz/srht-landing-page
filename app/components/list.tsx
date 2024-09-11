@@ -66,7 +66,7 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
         </h4>
       </section>
       {data && (
-        <section className="text-center lg:text-left rounded-b-xl pt-1 bg-mantle">
+        <section className={`text-center lg:text-left rounded-b-xl pt-1 bg-mantle border-${colors[cdx][0].replace('bg-', '')} border-b-2 border-l-2 border-r-2 border-t-transparent`}>
           <ul className="px-8 pb-6">{listItems}</ul>
         </section>
       )}
