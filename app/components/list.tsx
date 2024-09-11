@@ -20,15 +20,15 @@ import type { Item } from '../index.d.ts'
 
 export default function List({ title, data }: { title: string; data: Item[] }) {
   const colors: string[][] = [
-    ['bg-mauve/10', 'text-mauve'],
-    ['bg-yellow/10', 'text-yellow'],
-    ['bg-lavender/10', 'text-lavender'],
-    ['bg-teal/10', 'text-teal'],
-    ['bg-sky/10', 'text-sky'],
-    ['bg-flamingo/10', 'text-flamingo'],
-    ['bg-rosewater/10', 'text-rosewater'],
-    ['bg-sapphire/10', 'text-sapphire'],
-    ['bg-maroon/10', 'text-maroon']
+    ['border-mauve/10', 'bg-mauve/10', 'text-mauve'],
+    ['border-yellow/10', 'bg-yellow/10', 'text-yellow'],
+    ['border-lavender/10', 'bg-lavender/10', 'text-lavender'],
+    ['border-teal/10', 'bg-teal/10', 'text-teal'],
+    ['border-sky/10', 'bg-sky/10', 'text-sky'],
+    ['border-flamingo/10', 'bg-flamingo/10', 'text-flamingo'],
+    ['border-rosewater/10', 'bg-rosewater/10', 'text-rosewater'],
+    ['border-sapphire/10', 'bg-sapphire/10', 'text-sapphire'],
+    ['border-maroon/10', 'bg-maroon/10', 'text-maroon']
   ]
 
   const cdx: number = Math.floor(Math.random() * colors.length)
@@ -37,7 +37,7 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     return (
       <li
         key={idx}
-        className={`list-none md:hover:list-disc my-4 rounded-lg ${colors[cdx][0]} lg:rounded-none lg:bg-transparent`}
+        className={`list-none md:hover:list-disc my-4 rounded-lg ${colors[cdx][1]} lg:rounded-none lg:bg-transparent`}
       >
         {li.href && (
           <Link
@@ -57,16 +57,16 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
 
   return (
     <div className="mb-10 lg:mb-px">
-      <section className={`${colors[cdx][0]} text-base px-8 py-8 rounded-t-xl`}>
+      <section className={`${colors[cdx][1]} text-base px-8 py-8 rounded-t-xl`}>
         <h4
           id={`${title.replace('/', '')}`}
-          className={`${colors[cdx][1]} text-2xl md:text-xl font-mono lg:text-3xl lowercase text-center py-0`}
+          className={`${colors[cdx][2]} text-2xl md:text-xl font-mono lg:text-3xl lowercase text-center py-0`}
         >
           {title}
         </h4>
       </section>
       {data && (
-        <section className={`text-center lg:text-left rounded-b-xl pt-1 bg-mantle border-${colors[cdx][0].replace('bg-', '')} border-b-2 border-l-2 border-r-2 border-t-transparent`}>
+        <section className={`text-center lg:text-left rounded-b-xl pt-1 bg-mantle ${colors[cdx][0]} border-b-2 border-l-2 border-r-2 border-t-transparent`}>
           <ul className="px-8 pb-6">{listItems}</ul>
         </section>
       )}
