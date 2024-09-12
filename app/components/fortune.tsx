@@ -17,24 +17,25 @@
 
 import type { Quote } from '../index.d.ts'
 
-export default function Fortune({ data }: { data: Quote[] }) {
-  const idx: number = Math.floor(Math.random() * data.length)
-
-  const quote: Quote = data[idx]
-
-  const colors: string[] = [
-    'text-mauve',
-    'text-yellow',
-    'text-lavender',
-    'text-teal',
-    'text-flamingo',
-    'text-sky',
-    'text-rosewater',
-    'text-sapphire',
-    'text-maroon'
+  const colors: string[][] = [
+    ['text-mauve', 'bg-mauve'],
+    ['text-yellow', 'bg-yellow'],
+    ['text-lavender', 'bg-lavender'],
+    ['text-teal', 'bg-teal'],
+    ['text-flamingo', 'bg-flamingo'],
+    ['text-sky', 'bg-sky'],
+    ['text-rosewater', 'bg-rosewater'],
+    ['text-sapphire', 'bg-sapphire'],
+    ['text-maroon', 'bg-maroon'],
   ]
 
   const jdx: number = Math.floor(Math.random() * colors.length)
+
+
+const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
+  const idx: number = Math.floor(Math.random() * data.length)
+
+  const quote: Quote = data[idx]
 
   return (
     <div className="bg-mantle border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
@@ -43,11 +44,11 @@ export default function Fortune({ data }: { data: Quote[] }) {
       </blockquote>
       {(quote.response || quote.author) && (
         <h5
-          className={`${colors[jdx]} font-display text-sm md:text-lg mt-5 uppercase`}
+          className={`${colors[jdx][0]} font-display text-sm md:text-lg mt-5 uppercase`}
         >
           {quote.author && (
             <>
-              <code className={colors[jdx]}> </code> {quote.author}
+              <code className={colors[jdx][0]}> </code> {quote.author}
             </>
           )}
           {quote.response && quote.response}
@@ -56,3 +57,14 @@ export default function Fortune({ data }: { data: Quote[] }) {
     </div>
   )
 }
+
+const FortuneLoader = function(): JSX.Element {
+  return <div className="bg-mantle border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl w-full lg:w-[800px]">
+    <div className="animate-pulse rounded-md bg-overlay2 h-[26px] lg:h-[36px] w-full"></div>
+    <div className="animate-pulse rounded-md bg-overlay2 mt-[10px] h-[26px] lg:h-[36px] w-3/4"></div>
+    <div className={`animate-pulse rounded-md bg-overlay2 mt-5 h-[14px] lg:h-[28px] w-1/4`}></div>
+  </div>
+}
+
+export { FortuneLoader }
+export default Fortune

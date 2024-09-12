@@ -17,7 +17,13 @@
 import type { Dailies, Skills, Fortunes } from './index.d.ts'
 
 import dynamic from 'next/dynamic'
-const Fortune = dynamic(() => import('./components/fortune'), { ssr: false })
+
+import { FortuneLoader } from './components/fortune'
+
+const Fortune = dynamic(() => import('./components/fortune'), {
+  loading: () => <FortuneLoader/>,
+  ssr: false,
+})
 
 import Image from 'next/image'
 import List from './components/list'
@@ -39,7 +45,7 @@ export default async function Home() {
       <section className="flex flex-col items-center justify-between mb-10">
         <Fortune data={fortuneData.quotes} />
       </section>
-      <section className="md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-6 mb-10">
+      <section className="md:grid md:content-center md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-6 mb-10">
         <List title="/href" data={linkData.daily} />
         <List title="/lang" data={skillData.languages} />
         <List
