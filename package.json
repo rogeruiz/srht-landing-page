@@ -13,9 +13,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "caniuse-lite": "",
+    "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@catppuccin/tailwindcss": "^0.1.6",
