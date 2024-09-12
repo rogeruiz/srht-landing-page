@@ -34,14 +34,37 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
   const cdx: number = Math.floor(Math.random() * colors.length)
 
   const listItems = data.map((li: Item, idx: number) => {
+
+    const listItemClassNames = [
+      'list-none',
+      'md:hover:list-disc',
+      'my-4',
+      'rounded-lg',
+      `${colors[cdx][1]}`,
+      'lg:rounded-none',
+      'lg:bg-transparent',
+    ].join(' ')
+    const linkComponentClassNames = [
+      'md:underline',
+      'text-blue',
+      'hover:bg-crust',
+      'lg:hover:bg-transparent',
+      'hover:no-underline',
+      'visited:text-mauve',
+      'block',
+      'py-4',
+      'lg:py-0',
+      'rounded-lg',
+    ].join(' ')
+
     return (
       <li
         key={idx}
-        className={`list-none md:hover:list-disc my-4 rounded-lg ${colors[cdx][1]} lg:rounded-none lg:bg-transparent`}
+        className={listItemClassNames}
       >
         {li.href && (
           <Link
-            className="md:underline text-blue hover:bg-crust lg:hover:bg-transparent hover:no-underline visited:text-mauve block py-4 lg:py-0 rounded-lg"
+            className={linkComponentClassNames}
             href={li.href}
             title={li.desc}
             target="_blank"
@@ -55,18 +78,52 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     )
   })
 
+  const headingSectionClassNames = [
+    `${colors[cdx][1]}`,
+    'text-base',
+    'px-8',
+    'py-8',
+    'rounded-t-xl',
+  ].join(' ')
+
+  const headingClassNames = [
+    `${colors[cdx][2]}`,
+    'text-2xl',
+    'md:text-xl',
+    'font-mono',
+    'lg:text-3xl',
+    'lowercase',
+    'text-center',
+    'py-0',
+  ].join(' ')
+
+  const dataSectionClassNames = [
+    'text-center',
+    'lg:text-left',
+    'rounded-b-xl',
+    'pt-1',
+    'bg-mantle',
+    `${colors[cdx][0]}`,
+    'border-b-2',
+    'border-l-2',
+    'border-r-2',
+    'border-t-transparent',
+    'h-fit',
+    'grid-row',
+  ].join(' ')
+
   return (
     <div className="mb-10 lg:mb-px">
-      <section className={`${colors[cdx][1]} text-base px-8 py-8 rounded-t-xl`}>
+      <section className={headingSectionClassNames}>
         <h4
           id={`${title.replace('/', '')}`}
-          className={`${colors[cdx][2]} text-2xl md:text-xl font-mono lg:text-3xl lowercase text-center py-0`}
+          className={headingClassNames}
         >
           {title}
         </h4>
       </section>
       {data && (
-        <section className={`text-center lg:text-left rounded-b-xl pt-1 bg-mantle ${colors[cdx][0]} border-b-2 border-l-2 border-r-2 border-t-transparent`}>
+        <section className={dataSectionClassNames}>
           <ul className="px-8 pb-6">{listItems}</ul>
         </section>
       )}
