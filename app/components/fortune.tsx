@@ -38,8 +38,8 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
   const quote: Quote = data[idx]
 
   return (
-    <div className="bg-mantle border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl">
-      <blockquote className="text-subtext1 shadow-surface2 text-lg md:text-3xl font-sans">
+    <div className="bg-mantle border rounded-xl p-8 lg:mb-0 max-w-3xl">
+      <blockquote className="text-subtext0 text-2xl md:text-3xl font-sans">
         {quote.say}
       </blockquote>
       {(quote.response || quote.author) && (
@@ -59,10 +59,10 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
 }
 
 const FortuneLoader = function(): JSX.Element {
-  return <div className="bg-mantle border-overlay0 border rounded-xl p-8 lg:mb-0 max-w-3xl w-full lg:w-[800px]">
-    <div className="animate-pulse rounded-md bg-overlay2 h-[26px] lg:h-[36px] w-full"></div>
-    <div className="animate-pulse rounded-md bg-overlay2 mt-[10px] h-[26px] lg:h-[36px] w-3/4"></div>
-    <div className={`animate-pulse rounded-md bg-overlay2 mt-5 h-[14px] lg:h-[28px] w-1/4`}></div>
+  return <div className="bg-mantle border-crust border rounded-xl p-8 lg:mb-0 max-w-3xl w-full lg:w-[800px]">
+    <div className="animate-pulse rounded-md bg-crust h-[26px] lg:h-[36px] w-full"></div>
+    <div className="animate-pulse rounded-md bg-crust mt-[10px] h-[26px] lg:h-[36px] w-3/4"></div>
+    <div className={`animate-pulse rounded-md bg-crust mt-5 h-[14px] lg:h-[28px] w-1/4`}></div>
   </div>
 }
 
