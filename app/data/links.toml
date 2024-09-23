@@ -20,25 +20,20 @@ desc = """It's social bookmarking for introverts. I use this for a lot of my own
 href = "https://pinboard.in/popular/"
 
 [[daily]]
-name = "DuckDuckGo"
-href = "https://ddg.co/"
-desc = """The search engine I love to use. It's got bangs-support (!g, !w, !a, etc) for ergonomic search"""
-
-[[daily]]
 name = "Wikipedia"
 href = "https://en.wikipedia.org/wiki/Main_Page"
 desc = """Hitting the random button a couple of times on this is a nice way to
 relax"""
 
-[[daily]]
-name = "Exercism"
-href = "https://exercism.org/tracks"
-desc = """I practice coding & mentoring while exploring new languages on Exercism regularly."""
+# [[daily]]
+# name = "Exercism"
+# href = "https://exercism.org/tracks"
+# desc = """I practice coding & mentoring while exploring new languages on Exercism regularly."""
 
-[[daily]]
-name = "CodeSignal"
-href = "https://app.codesignal.com/"
-desc = """I practice coding puzzles on here every now & then."""
+# [[daily]]
+# name = "CodeSignal"
+# href = "https://app.codesignal.com/"
+# desc = """I practice coding puzzles on here every now & then."""
 
 [[daily]]
 name = "Hacker News"
@@ -55,40 +50,40 @@ name = "sourcehut"
 href = "https://sr.ht/projects"
 desc = """It's a collection of tools useful for software development. The hacker's forge!"""
 
-[[daily]]
-name = "GitHub"
-href = "https://github.com/explore"
-desc = """I check a lot of things out on GitHub and use it to explore projects in OSS."""
+# [[daily]]
+# name = "GitHub"
+# href = "https://github.com/explore"
+# desc = """I check a lot of things out on GitHub and use it to explore projects in OSS."""
 
 [[daily]]
 name = "Gists"
 href = "https://gist.github.com/discover"
 desc = """This is GitHub's pastebin-clone where I post a lot of little interesting snippets from time to time. I was more active here earlier in my career"""
 
-[[daily]]
-name = "LinkedIn"
-href = "https://www.linkedin.com/"
-desc = """It's the social media website disguised as a "professional" networking website disguised as a townsquare."""
+# [[daily]]
+# name = "LinkedIn"
+# href = "https://www.linkedin.com/"
+# desc = """It's the social media website disguised as a "professional" networking website disguised as a townsquare."""
 
-[[daily]]
-name = "Goodreads"
-href = "https://www.goodreads.com/explore"
-desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
+# [[daily]]
+# name = "Goodreads"
+# href = "https://www.goodreads.com/explore"
+# desc = """A social media platform I use to keep track of the books I read. It helps that my Kindle syncs with it."""
 
 [[daily]]
 name = "Daring Fireball"
 desc = ""
 href = "https://daringfireball.net"
 
-[[daily]]
-name = "Instapaper"
-desc = ""
-href = "https://www.instapaper.com/browse"
+# [[daily]]
+# name = "Instapaper"
+# desc = ""
+# href = "https://www.instapaper.com/browse"
 
-[[daily]]
-name = "The Onion"
-desc = ""
-href = "https://www.theonion.com"
+# [[daily]]
+# name = "The Onion"
+# desc = ""
+# href = "https://www.theonion.com"
 
 [[daily]]
 name = "LessWrong"
@@ -96,9 +91,24 @@ desc = ""
 href = "https://www.lesswrong.com/allPosts?timeframe=daily"
 
 [[daily]]
+name = "Glosbe"
+desc = ""
+href = "https://glosbe.com"
+
+[[daily]]
+name = "SoundCloud"
+desc = ""
+href = "https://soundcloud.com/you/library"
+
+[[daily]]
 name = "Hype Machine"
 desc = ""
 href = "https://hypem.com/latest"
+
+[[daily]]
+name = "Radio Garden"
+desc = "The best internet radio tool I've ever used."
+href = "https://radio.garden/visit"
 
 [[daily]]
 name = "My Blog"
@@ -108,4 +118,4 @@ desc = "This is my personal blog with my writings on software things."
 [[daily]]
 name = "My Résumé"
 href = "https://resume.rog.gr"
-desc = "This is my résumé."
+desc = "This is my online résumé."

@@ -40,24 +40,34 @@ export default async function Home() {
   const skillData: Skills = await getSkills()
   const fortuneData: Fortunes = await getFortunes()
 
+  const listContainerStyles = [
+    'md:grid',
+    'md:content-center',
+    'md:grid-cols-2',
+    'md:gap-2',
+    'lg:auto-cols-min',
+    'lg:auto-rows-min',
+    'lg:grid-cols-3',
+    'lg:grid-flow-dense',
+    'lg:gap-3',
+    'mb-10',
+  ].join(' ')
+
   return (
     <main className="bg-base text-text min-h-screen p-8 md:p-12 lg:p-24">
       <section className="flex flex-col items-center justify-between mb-10">
         <Fortune data={fortuneData.quotes} />
       </section>
-      <section className="md:grid md:content-center md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-6 mb-10">
+      <section className={listContainerStyles}>
         <List title="/href" data={linkData.daily} />
         <List title="/lang" data={skillData.languages} />
-        <List
-          title="/lib"
-          data={skillData.frameworksLibraries}
-        />
-        <List title="/pkgs" data={skillData.packageManagers} />
+        <List title="/lib" data={skillData.frameworksLibraries} />
         <List title="/api" data={skillData.configurationApis} />
-        <List title="/test" data={skillData.testing} />
-        <List title="/vcs" data={skillData.versionControl} />
         <List title="/os" data={skillData.operatingSystems} />
         <List title="/cloud" data={skillData.devopsCloud} />
+        <List title="/test" data={skillData.testing} />
+        <List title="/vcs" data={skillData.versionControl} />
+        <List title="/pkgs" data={skillData.packageManagers} />
       </section>
       <section className="lg:grid lg:grid-cols-2 lg:gap-4">
         <section className="lg:col-start-2 flex flex-col lg:flex-row">

@@ -20,16 +20,24 @@ import type { Item } from '../index.d.ts'
 
 export default function List({ title, data }: { title: string; data: Item[] }) {
   const colors: string[][] = [
-    ['border-mauve/10', 'bg-mauve/10', 'text-mauve'],
-    ['border-yellow/10', 'bg-yellow/10', 'text-yellow'],
-    ['border-lavender/10', 'bg-lavender/10', 'text-lavender'],
-    ['border-teal/10', 'bg-teal/10', 'text-teal'],
-    ['border-sky/10', 'bg-sky/10', 'text-sky'],
-    ['border-flamingo/10', 'bg-flamingo/10', 'text-flamingo'],
-    ['border-rosewater/10', 'bg-rosewater/10', 'text-rosewater'],
-    ['border-sapphire/10', 'bg-sapphire/10', 'text-sapphire'],
-    ['border-maroon/10', 'bg-maroon/10', 'text-maroon']
+    ['border-mauve', 'bg-mauve/10', 'text-mauve'],
+    ['border-yellow', 'bg-yellow/10', 'text-yellow'],
+    ['border-lavender', 'bg-lavender/10', 'text-lavender'],
+    ['border-teal', 'bg-teal/10', 'text-teal'],
+    ['border-sky', 'bg-sky/10', 'text-sky'],
+    ['border-flamingo', 'bg-flamingo/10', 'text-flamingo'],
+    ['border-rosewater', 'bg-rosewater/10', 'text-rosewater'],
+    ['border-sapphire', 'bg-sapphire/10', 'text-sapphire'],
+    ['border-maroon', 'bg-maroon/10', 'text-maroon']
   ]
+
+  let titleStyle = ''
+  let listStyle = 'grid-cols-2'
+  if ('/href' === title) {
+    titleStyle = 'lg:col-span-3'
+    listStyle = 'grid-cols-2 lg:grid-cols-4'
+  }
+
 
   const cdx: number = Math.floor(Math.random() * colors.length)
 
@@ -37,12 +45,13 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
 
     const listItemClassNames = [
       'list-none',
-      'md:hover:list-disc',
-      'my-4',
+      'my-2',
       'rounded-lg',
       `${colors[cdx][1]}`,
       'lg:rounded-none',
       'lg:bg-transparent',
+      'grid',
+      'items-center',
     ].join(' ')
     const linkComponentClassNames = [
       'md:underline',
@@ -55,6 +64,8 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
       'py-4',
       'lg:py-0',
       'rounded-lg',
+      'mx-1',
+      'break-word',
     ].join(' ')
 
     return (
@@ -84,6 +95,11 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     'px-8',
     'py-8',
     'rounded-t-xl',
+    `${colors[cdx][0]}`,
+    'border-t-2',
+    'border-l-2',
+    'border-r-2',
+    'border-b-transparent',
   ].join(' ')
 
   const headingClassNames = [
@@ -111,9 +127,9 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     'h-fit',
     'grid-row',
   ].join(' ')
-
+  
   return (
-    <div className="mb-10 lg:mb-px">
+    <div className={`mb-10 lg:mb-px ${titleStyle}`}>
       <section className={headingSectionClassNames}>
         <h4
           id={`${title.replace('/', '')}`}
@@ -124,7 +140,7 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
       </section>
       {data && (
         <section className={dataSectionClassNames}>
-          <ul className="px-8 pb-6">{listItems}</ul>
+          <ul className={`px-8 pb-6 grid ${listStyle} gap-3 text-center`}>{listItems}</ul>
         </section>
       )}
     </div>

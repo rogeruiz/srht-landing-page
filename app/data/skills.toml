@@ -34,10 +34,10 @@ name = "TypeScript"
 desc = """"""
 href = "https://www.typescriptlang.org/docs/"
 
-[[languages]]
-name = "Ruby"
-desc = ""
-href = "https://ruby-doc.org/current"
+# [[languages]]
+# name = "Ruby"
+# desc = ""
+# href = "https://ruby-doc.org/current"
 
 [[languages]]
 name = "Rust"
@@ -94,10 +94,10 @@ name = "Gin"
 desc = "An HTTP web framework writting in Go with a Martini-like API."
 href = "https://gin-gonic.com/docs/"
 
-[[frameworksLibraries]]
-name = "Ruby on Rails"
-desc = ""
-href= "https://api.rubyonrails.org/"
+# [[frameworksLibraries]]
+# name = "Ruby on Rails"
+# desc = ""
+# href= "https://api.rubyonrails.org/"
 
 [[frameworksLibraries]]
 name = "Express"
@@ -129,20 +129,20 @@ name = "Flask"
 desc = ""
 href = "https://flask.palletsprojects.com/en/latest/#api-reference"
 
-[[frameworksLibraries]]
-name = "Ember.js"
-desc = ""
-href= "https://api.emberjs.com/"
+# [[frameworksLibraries]]
+# name = "Ember.js"
+# desc = ""
+# href= "https://api.emberjs.com/"
 
 [[frameworksLibraries]]
 name = "jQuery"
 desc = ""
 href= "https://api.jquery.com"
 
-[[frameworksLibraries]]
-name = "Laravel"
-desc = ""
-href = "https://laravel.com/docs"
+# [[frameworksLibraries]]
+# name = "Laravel"
+# desc = ""
+# href = "https://laravel.com/docs"
 
 [[packageManagers]]
 name = "Nixpkgs"
@@ -287,6 +287,11 @@ desc = ""
 href = "https://nixos.org/manual/nixos/stable/"
 
 [[operatingSystems]]
+name = "Windows"
+desc = ""
+href = "https://www.microsoft.com/en-us/windows"
+
+[[operatingSystems]]
 name = "Linux"
 desc = "A family of open-source Unix-like operating systems"
 href = "https://en.wikipedia.org/wiki/Linux"
@@ -311,10 +316,10 @@ name = "Cloud Foundry"
 desc = ""
 href = "https://docs.cloudfoundry.org"
 
-[[devopsCloud]]
-name = "Service Broker API"
-desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
-href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
+# [[devopsCloud]]
+# name = "Service Broker API"
+# desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
+# href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
 
 [[devopsCloud]]
 name = "CI/CD"
@@ -361,10 +366,10 @@ name = "Starship"
 desc = ""
 href = "https://starship.rs/config/"
 
-[[languages]]
-name = "PHP"
-desc = ""
-href = "https://www.php.net/manual/en/"
+# [[languages]]
+# name = "PHP"
+# desc = ""
+# href = "https://www.php.net/manual/en/"
 
 [[languages]]
 name = "PostgreSQL"
@@ -385,3 +390,13 @@ href = "https://prettier.io/docs/en/"
 name = "Nix"
 desc = ""
 href = "https://nix.dev/manual/nix/2.18/language/"
+
+[[languages]]
+name = ".NET"
+desc = ""
+href = "https://dotnet.microsoft.com/en-us/"
+
+[[languages]]
+name = "PowerShell"
+desc = ""
+href = "https://learn.microsoft.com/en-us/powershell/"
