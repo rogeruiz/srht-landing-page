@@ -95,11 +95,6 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     'px-8',
     'py-8',
     'rounded-t-xl',
-    `${colors[cdx][0]}`,
-    'border-t-2',
-    'border-l-2',
-    'border-r-2',
-    'border-b-transparent',
   ].join(' ')
 
   const headingClassNames = [
@@ -118,18 +113,12 @@ export default function List({ title, data }: { title: string; data: Item[] }) {
     'lg:text-left',
     'rounded-b-xl',
     'pt-1',
-    'bg-mantle',
-    `${colors[cdx][0]}`,
-    'border-b-2',
-    'border-l-2',
-    'border-r-2',
-    'border-t-transparent',
     'h-fit',
     'grid-row',
   ].join(' ')
-  
+
   return (
-    <div className={`mb-10 lg:mb-px ${titleStyle}`}>
+    <div className={`mb-4 md:mb-0 ${titleStyle} border-2 ${colors[cdx][0]} bg-mantle`}>
       <section className={headingSectionClassNames}>
         <h4
           id={`${title.replace('/', '')}`}
