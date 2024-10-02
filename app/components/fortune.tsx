@@ -17,20 +17,28 @@
 
 import type { Quote } from '../index.d.ts'
 
-  const colors: string[][] = [
-    ['text-mauve', 'bg-mauve'],
-    ['text-yellow', 'bg-yellow'],
-    ['text-lavender', 'bg-lavender'],
-    ['text-teal', 'bg-teal'],
-    ['text-flamingo', 'bg-flamingo'],
-    ['text-sky', 'bg-sky'],
-    ['text-rosewater', 'bg-rosewater'],
-    ['text-sapphire', 'bg-sapphire'],
-    ['text-maroon', 'bg-maroon'],
-  ]
+const colors: string[][] = [
+  ['text-mauve', 'bg-mauve'],
+  ['text-yellow', 'bg-yellow'],
+  ['text-lavender', 'bg-lavender'],
+  ['text-teal', 'bg-teal'],
+  ['text-flamingo', 'bg-flamingo'],
+  ['text-sky', 'bg-sky'],
+  ['text-rosewater', 'bg-rosewater'],
+  ['text-sapphire', 'bg-sapphire'],
+  ['text-maroon', 'bg-maroon'],
+]
 
-  const jdx: number = Math.floor(Math.random() * colors.length)
+const jdx: number = Math.floor(Math.random() * colors.length)
 
+const fortuneBaseStyles: string = [
+  'bg-mantle',
+  'border-crust',
+  'border',
+  'p-8',
+  'lg:mb-0',
+  'max-w-3xl',
+].join(' ')
 
 const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
   const idx: number = Math.floor(Math.random() * data.length)
@@ -38,7 +46,7 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
   const quote: Quote = data[idx]
 
   return (
-    <div className="bg-mantle border p-8 lg:mb-0 max-w-3xl">
+    <div className={fortuneBaseStyles}>
       <blockquote className="text-subtext0 text-2xl md:text-3xl font-sans">
         {quote.say}
       </blockquote>
@@ -59,7 +67,7 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
 }
 
 const FortuneLoader = function(): JSX.Element {
-  return <div className="bg-mantle border-crust border rounded-xl p-8 lg:mb-0 max-w-3xl w-full lg:w-[800px]">
+  return <div className={`${fortuneBaseStyles} w-full lg:w-[800px]`}>
     <div className="animate-pulse rounded-md bg-crust h-[26px] lg:h-[36px] w-full"></div>
     <div className="animate-pulse rounded-md bg-crust mt-[10px] h-[26px] lg:h-[36px] w-3/4"></div>
     <div className={`animate-pulse rounded-md bg-crust mt-5 h-[14px] lg:h-[28px] w-1/4`}></div>
