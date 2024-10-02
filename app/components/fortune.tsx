@@ -38,7 +38,7 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
   const quote: Quote = data[idx]
 
   return (
-    <div className="bg-mantle border rounded-xl p-8 lg:mb-0 max-w-3xl">
+    <div className="bg-mantle border p-8 lg:mb-0 max-w-3xl">
       <blockquote className="text-subtext0 text-2xl md:text-3xl font-sans">
         {quote.say}
       </blockquote>
