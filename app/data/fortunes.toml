@@ -43,6 +43,10 @@ say = """Optimization hinders evolution."""
 author = """Alan Perlis"""
 
 [[quotes]]
+say = """There are two ways to write error-free programs; only the third one works."""
+author = """Alan Perlis"""
+
+[[quotes]]
 say = """Recursion is the root of computation since it trades description for time."""
 author = """Alan Perlis"""
 
