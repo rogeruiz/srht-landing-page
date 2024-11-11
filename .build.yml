@@ -6,6 +6,7 @@ environment:
 packages:
   - npm
   - hut
+shell: true
 tasks:
   - install_dependencies: |
       pushd ${project}
