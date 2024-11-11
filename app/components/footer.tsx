@@ -25,11 +25,11 @@ export default function Footer() {
           Built with{' '}
           <Link
             className="underline hover:no-underline"
-            href="https://bun.sh"
+            href="https://nodejs.org/en"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Node
+            Node.js
           </Link>
           ,{' '}
           <Link
