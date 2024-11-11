@@ -4,6 +4,7 @@ environment:
   project: landing-page
   site: rog.gr
 packages:
+  - nodejs
   - npm
   - hut
 shell: true
