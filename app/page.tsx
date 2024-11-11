@@ -76,7 +76,7 @@ export default async function Home() {
             className="mb-6 self-center flex-none lg:self-start lg:mr-6 rounded-full"
             width="128"
             height="128"
-            src="images/headshot-2023.jpeg"
+            src="images/headshot-2024.jpeg"
             alt="Roger Steve Ruiz headshot"
           />
           <p className="col-start-2">{description}</p>
