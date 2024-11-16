@@ -149,7 +149,7 @@ name = "Arch"
 desc = """The Arch Linux distribution package manager."""
 href = "https://archlinux.org/packages/"
 
-[[packageManages]]
+[[packageManagers]]
 name = "Debian"
 desc = "The Debian distribution package manager."
 href= "https://www.debian.org/distrib/packages"
