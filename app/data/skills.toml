@@ -145,9 +145,19 @@ href= "https://api.jquery.com"
 # href = "https://laravel.com/docs"
 
 [[packageManagers]]
-name = "Nixpkgs"
-desc = ""
-href = "https://search.nixos.org/packages"
+name = "Arch"
+desc = """The Arch Linux distribution package manager."""
+href = "https://archlinux.org/packages/"
+
+[[packageManages]]
+name = "Debian"
+desc = "The Debian distribution package manager."
+href= "https://www.debian.org/distrib/packages"
+
+[[packageManagers]]
+name = "Homebrew"
+desc = """Homebrew lets you install packages and apps that Apple or your Linux system didn't provide."""
+href = "https://formulae.brew.sh"
 
 [[packageManagers]]
 name = "MacPorts"
@@ -157,14 +167,9 @@ the Mac OS X operating system. """
 href = "https://ports.macports.org"
 
 [[packageManagers]]
-name = "Homebrew"
-desc = """Homebrew lets you install packages and apps that Apple or your Linux system didn't provide."""
-href = "https://formulae.brew.sh"
-
-[[packageManagers]]
-name = "Arch"
-desc = """The Arch Linux distribution package manager."""
-href = "https://archlinux.org/packages/"
+name = "Nixpkgs"
+desc = ""
+href = "https://search.nixos.org/packages"
 
 [[packageManagers]]
 name = "Ubuntu"
