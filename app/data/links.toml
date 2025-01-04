@@ -35,15 +35,20 @@ relax"""
 # href = "https://app.codesignal.com/"
 # desc = """I practice coding puzzles on here every now & then."""
 
-[[daily]]
-name = "Hacker News"
-href = "https://news.ycombinator.com/"
-desc = """A link aggregation and discussion platform run by Y Combinator, a tech incubator and investing company."""
+# [[daily]]
+# name = "Hacker News"
+# href = "https://news.ycombinator.com/"
+# desc = """A link aggregation and discussion platform run by Y Combinator, a tech incubator and investing company."""
 
 [[daily]]
-name = "Lobsters"
-href = "https://lobste.rs/"
-desc = """This is a computing-focused community that uses link aggregation and discussion."""
+name = "La Palabra Del Dia"
+href = "https://lapalabradeldia.com/"
+desc = "¡Es Wordle pero en español!"
+
+# [[daily]]
+# name = "Lobsters"
+# href = "https://lobste.rs/"
+# desc = """This is a computing-focused community that uses link aggregation and discussion."""
 
 [[daily]]
 name = "sourcehut"
