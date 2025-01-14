@@ -46,7 +46,7 @@ href = "https://lapalabradeldia.com/"
 desc = "¡Es Wordle pero en español!"
 
 [[daily]]
-name = "Word of the Day : Wordle"
+name = "Word of the Day"
 href = "https://www.nytimes.com/games/wordle/index.html"
 desc = "It's wordle in English"
 
