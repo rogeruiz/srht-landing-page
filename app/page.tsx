@@ -21,7 +21,7 @@ import dynamic from 'next/dynamic'
 import { FortuneLoader } from './components/fortune'
 
 const Fortune = dynamic(() => import('./components/fortune'), {
-  loading: () => <FortuneLoader/>,
+  loading: () => <FortuneLoader />,
   ssr: false,
 })
 
@@ -76,7 +76,7 @@ export default async function Home() {
             className="mb-6 self-center flex-none lg:self-start lg:mr-6 rounded-full"
             width="128"
             height="128"
-            src="images/headshot-2024.jpeg"
+            src="images/headshot-2025.png"
             alt="Roger Steve Ruiz headshot"
           />
           <p className="col-start-2">{description}</p>
