@@ -1,8 +1,12 @@
 image: alpine/latest
 oauth: pages.sr.ht/PAGES:RW
+secrets:
+  - 5fd6bbf1-8791-4c37-8e1f-2d423d1c6a12
 environment:
-  project: landing-page
-  site: rog.gr
+  URL: rog.gr
+  GH_REPO: srht-landing-page
+  GH_USER: rogeruiz
+  SH_REPO: landing-page
 packages:
   - nodejs
   - npm
@@ -10,17 +14,21 @@ packages:
 shell: true
 tasks:
   - install_dependencies: |
-      pushd ${project}
+      pushd ${SH_REPO}
       npm install
       popd
   - export: |
-      pushd ${project}
+      pushd ${SH_REPO}
       npm run build
       popd
   - package: |
-      pushd ${project}
+      pushd ${SH_REPO}
       tar -C out -cvz . > ../site.tar.gz
       popd
       file site.tar.gz
   - deploy: |
-      hut pages publish -d $site site.tar.gz
+      hut pages publish -d ${URL} site.tar.gz
+  - mirror-to-github: |
+      cd ~/"${SH_REPO}"
+      git config --global credential.helper store
+      git push --mirror "https://github.com/${GH_USER}/${GH_REPO}"
