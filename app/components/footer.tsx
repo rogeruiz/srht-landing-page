@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="col-span-2 text-overlay2 text-center mt-14 py-5">
       <ul>
-        <li>2011 – {new Date().getFullYear()} Roger Steve Ruiz</li>
+        <li>2011 – {new Date().getFullYear()} Roger Steve Ruiz 🏳️‍⚧️🏳️‍🌈</li>
         <li>
           Built with{' '}
           <Link

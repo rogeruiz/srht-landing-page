@@ -20,6 +20,11 @@ desc = """I use Bash to solve a lot of my automation needs because it's conviene
 href = "http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html"
 
 [[languages]]
+name = "Just"
+desc = """"""
+href = "https://just.systems/man/en"
+
+[[languages]]
 name = "Python"
 desc = """"""
 href = "https://docs.python.org/3/"
@@ -34,10 +39,10 @@ name = "TypeScript"
 desc = """"""
 href = "https://www.typescriptlang.org/docs/"
 
-# [[languages]]
-# name = "Ruby"
-# desc = ""
-# href = "https://ruby-doc.org/current"
+[[languages]]
+name = "Ruby"
+desc = ""
+href = "https://ruby-doc.org/current"
 
 [[languages]]
 name = "Rust"
@@ -94,10 +99,10 @@ name = "Gin"
 desc = "An HTTP web framework writting in Go with a Martini-like API."
 href = "https://gin-gonic.com/docs/"
 
-# [[frameworksLibraries]]
-# name = "Ruby on Rails"
-# desc = ""
-# href= "https://api.rubyonrails.org/"
+[[frameworksLibraries]]
+name = "Ruby on Rails"
+desc = ""
+href= "https://api.rubyonrails.org/"
 
 [[frameworksLibraries]]
 name = "Express"
@@ -125,29 +130,44 @@ desc = ""
 href = "https://htmx.org/docs/"
 
 [[frameworksLibraries]]
+name = "Noogλe"
+desc = ""
+href = "https://noogle.dev/"
+
+[[frameworksLibraries]]
 name = "Flask"
 desc = ""
 href = "https://flask.palletsprojects.com/en/latest/#api-reference"
 
-# [[frameworksLibraries]]
-# name = "Ember.js"
-# desc = ""
-# href= "https://api.emberjs.com/"
+[[frameworksLibraries]]
+name = "Flask"
+desc = ""
+href = "https://flask.palletsprojects.com/en/latest/#api-reference"
+
+[[frameworksLibraries]]
+name = "Ember.js"
+desc = ""
+href= "https://api.emberjs.com/"
 
 [[frameworksLibraries]]
 name = "jQuery"
 desc = ""
 href= "https://api.jquery.com"
 
-# [[frameworksLibraries]]
-# name = "Laravel"
-# desc = ""
-# href = "https://laravel.com/docs"
+[[frameworksLibraries]]
+name = "Laravel"
+desc = ""
+href = "https://laravel.com/docs"
 
 [[packageManagers]]
 name = "Arch"
 desc = """The Arch Linux distribution package manager."""
 href = "https://archlinux.org/packages/"
+
+[[frameworksLibraries]]
+name = "huh?"
+desc = ""
+href= "https://pkg.go.dev/github.com/charmbracelet/huh"
 
 [[packageManagers]]
 name = "Debian"
@@ -321,10 +341,10 @@ name = "Cloud Foundry"
 desc = ""
 href = "https://docs.cloudfoundry.org"
 
-# [[devopsCloud]]
-# name = "Service Broker API"
-# desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
-# href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
+[[devopsCloud]]
+name = "Service Broker API"
+desc = "The Open Service Broker API is an HTTP(S) interface between Platforms & Service Brokers for Cloud Foundry."
+href = "https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md"
 
 [[devopsCloud]]
 name = "CI/CD"
@@ -367,14 +387,19 @@ desc = ""
 href = "https://felixkratz.github.io/SketchyBar/config/bar"
 
 [[configurationApis]]
+name = "skhd"
+desc = "Simple hotkey daemon for macOS"
+href = "https://github.com/koekeishiya/skhd"
+
+[[configurationApis]]
 name = "Starship"
 desc = ""
 href = "https://starship.rs/config/"
 
-# [[languages]]
-# name = "PHP"
-# desc = ""
-# href = "https://www.php.net/manual/en/"
+[[languages]]
+name = "PHP"
+desc = ""
+href = "https://www.php.net/manual/en/"
 
 [[languages]]
 name = "PostgreSQL"

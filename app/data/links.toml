@@ -15,30 +15,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 [[daily]]
-name = "Pinboard"
-desc = """It's social bookmarking for introverts. I use this for a lot of my own bookmarking. Some of my bookmarks from there may even end up here if it's useful enough to use every day."""
-href = "https://pinboard.in/popular/"
-
-[[daily]]
-name = "Wikipedia"
-href = "https://en.wikipedia.org/wiki/Main_Page"
-desc = """Hitting the random button a couple of times on this is a nice way to
-relax"""
-
-# [[daily]]
-# name = "Exercism"
-# href = "https://exercism.org/tracks"
-# desc = """I practice coding & mentoring while exploring new languages on Exercism regularly."""
-
-# [[daily]]
-# name = "CodeSignal"
-# href = "https://app.codesignal.com/"
-# desc = """I practice coding puzzles on here every now & then."""
-
-# [[daily]]
-# name = "Hacker News"
-# href = "https://news.ycombinator.com/"
-# desc = """A link aggregation and discussion platform run by Y Combinator, a tech incubator and investing company."""
+name = "linkhut"
+href = "https://ln.ht/?v=popular"
+desc = """It's like Pinboard but more modern. Lots of popular links here!"""
 
 [[daily]]
 name = "La Palabra Del Dia"
@@ -49,6 +28,51 @@ desc = "¡Es Wordle pero en español!"
 name = "Word of the Day"
 href = "https://www.nytimes.com/games/wordle/index.html"
 desc = "It's wordle in English"
+
+[[daily]]
+name = "What's it today?"
+href = "https://www.whatsit.today/"
+desc = "Whats it today? A simple word game for fun."
+
+# [[daily]]
+# name = "Pinboard"
+# desc = """It's social bookmarking for introverts. I use this for a lot of my own bookmarking. Some of my bookmarks from there may even end up here if it's useful enough to use every day."""
+# href = "https://pinboard.in/popular/"
+#
+[[daily]]
+name = "Them"
+desc = "National LGBTQ+ News"
+href = "https://www.them.us/news"
+
+[[daily]]
+name = "Windy City Times"
+desc = "Regional LGBTQ+ News"
+href ="https://windycitytimes.com/category/news/"
+
+[[daily]]
+name = "Chicago Social Butterflies"
+desc = "Chicago Social Butterflies event calendars"
+href ="https://chicagosocialbutterflies.com/events-calendar/"
+
+[[daily]]
+name = "Wikipedia"
+href = "https://en.wikipedia.org/wiki/Main_Page"
+desc = """Hitting the random button a couple of times on this is a nice way to relax"""
+
+[[daily]]
+name = "Exercism"
+href = "https://exercism.org/tracks"
+desc = """I practice coding & mentoring while exploring new languages on Exercism regularly."""
+
+# [[daily]]
+# name = "CodeSignal"
+# href = "https://app.codesignal.com/"
+# desc = """I practice coding puzzles on here every now & then."""
+
+# [[daily]]
+# name = "Hacker News"
+# href = "https://news.ycombinator.com/"
+# desc = """A link aggregation and discussion platform run by Y Combinator, a tech incubator and investing company."""
 
 # [[daily]]
 # name = "Lobsters"
@@ -65,16 +89,11 @@ desc = """It's a collection of tools useful for software development. The hacker
 # href = "https://github.com/explore"
 # desc = """I check a lot of things out on GitHub and use it to explore projects in OSS."""
 
-[[daily]]
-name = "Gists"
-href = "https://gist.github.com/discover"
-desc = """This is GitHub's pastebin-clone where I post a lot of little interesting snippets from time to time. I was more active here earlier in my career"""
-
 # [[daily]]
-# name = "LinkedIn"
-# href = "https://www.linkedin.com/"
-# desc = """It's the social media website disguised as a "professional" networking website disguised as a townsquare."""
-
+# name = "Gists"
+# href = "https://gist.github.com/discover"
+# desc = """This is GitHub's pastebin-clone where I post a lot of little interesting snippets from time to time. I was more active here earlier in my career"""
+#
 # [[daily]]
 # name = "Goodreads"
 # href = "https://www.goodreads.com/explore"
@@ -85,34 +104,34 @@ name = "Daring Fireball"
 desc = ""
 href = "https://daringfireball.net"
 
-# [[daily]]
-# name = "Instapaper"
-# desc = ""
-# href = "https://www.instapaper.com/browse"
-
-# [[daily]]
-# name = "The Onion"
-# desc = ""
-# href = "https://www.theonion.com"
+[[daily]]
+name = "Instapaper"
+desc = "Some people save stuff to their Instapaper and it's neat to find what is out there"
+href = "https://www.instapaper.com/browse"
 
 [[daily]]
-name = "LessWrong"
-desc = ""
-href = "https://www.lesswrong.com/allPosts?timeframe=daily"
+name = "The Onion"
+desc = "Sometimes the news is best processed via humorism"
+href = "https://www.theonion.com"
+
+[[daily]]
+name = "LinkedIn"
+href = "https://www.linkedin.com/"
+desc = """It's the social media website disguised as a "professional" networking website disguised as a townsquare."""
 
 [[daily]]
 name = "Glosbe"
-desc = ""
+desc = "A really great translation application that aggregates translations together and helps compare with Google Translate results in real-time"
 href = "https://glosbe.com"
 
 [[daily]]
 name = "SoundCloud"
-desc = ""
+desc = "My personal SoundCloud library. My first streaming service."
 href = "https://soundcloud.com/you/library"
 
 [[daily]]
 name = "Hype Machine"
-desc = ""
+desc = "A way to have conversations about music on-line."
 href = "https://hypem.com/latest"
 
 [[daily]]

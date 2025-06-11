@@ -30,10 +30,12 @@ import List from './components/list'
 import { getDailys, getSkills, getFortunes } from './lib/fetch-links'
 import Footer from './components/footer'
 
-const description = `Hi! My name's Roger Steve Ruiz, pronouns they/he, & I've
-been a software engineer since 2011. I've been working remotely since 2013. I
-use this page as a personal landing page. It's also an active list of the
-technologies that I have experience working with.`
+const description = `Hi! My name's Roger Steve, pronouns they/he. I've been a
+software engineer since 2011. I've been working remotely since 2013. I've been
+using the internet since 1997. I use this page as a personal landing page. It's
+also an actively updated list of the technologies that I have experience
+working with or am currently working with. Reach out to me via email if you're
+interested in collaborating.`
 
 export default async function Home() {
   const linkData: Dailies = await getDailys()
