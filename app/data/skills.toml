@@ -137,12 +137,7 @@ href = "https://noogle.dev/"
 [[frameworksLibraries]]
 name = "Flask"
 desc = ""
-href = "https://flask.palletsprojects.com/en/latest/#api-reference"
-
-[[frameworksLibraries]]
-name = "Flask"
-desc = ""
-href = "https://flask.palletsprojects.com/en/latest/#api-reference"
+href = "https://flask.palletsprojects.com/en/stable/#api-reference"
 
 [[frameworksLibraries]]
 name = "Ember.js"
