@@ -38,17 +38,78 @@ const fortuneBaseStyles: string = [
   'p-8',
   'lg:mb-0',
   'max-w-3xl',
+  'transition-all',
+  'duration-700',
+  'ease-in-out',
 ].join(' ')
 
+import React, { useEffect, useState } from 'react'
+
 const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
-  const idx: number = Math.floor(Math.random() * data.length)
+  const [idx, setIdx] = useState(() => Math.floor(Math.random() * data.length))
+  const [charIdx, setCharIdx] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const [phase, setPhase] = useState<'typing' | 'waiting' | 'deleting'>('typing')
+  const charDelay = 64 // ms per character
+
+  useEffect(() => {
+    setCharIdx(0)
+    setPhase('typing')
+  }, [idx, data])
+
+  useEffect(() => {
+    let charInterval: NodeJS.Timeout | undefined
+    let waitTimeout: NodeJS.Timeout | undefined
+    const quote = data[idx]
+    const len = quote.say.length
+    if (paused) return
+    if (phase === 'typing' && charIdx < len) {
+      charInterval = setInterval(() => {
+        setCharIdx(prev => {
+          if (prev < len - 1) {
+            return prev + 1
+          } else {
+            clearInterval(charInterval)
+            setPhase('waiting')
+            return prev + 1
+          }
+        })
+      }, charDelay)
+    } else if (phase === 'waiting') {
+      waitTimeout = setTimeout(() => {
+        setPhase('deleting')
+      }, 2000)
+    } else if (phase === 'deleting' && charIdx > 0) {
+      charInterval = setInterval(() => {
+        setCharIdx(prev => {
+          if (prev > 1) {
+            return prev - 1
+          } else {
+            clearInterval(charInterval)
+            setIdx(i => (i + 1) % data.length)
+            setPhase('typing')
+            return 0
+          }
+        })
+      }, charDelay / 2)
+    }
+    return () => {
+      if (charInterval) clearInterval(charInterval)
+      if (waitTimeout) clearTimeout(waitTimeout)
+    }
+  }, [charIdx, phase, paused, data, idx])
 
   const quote: Quote = data[idx]
 
   return (
-    <div className={fortuneBaseStyles}>
+    <div
+      className={fortuneBaseStyles}
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       <blockquote className="text-subtext0 text-2xl md:text-3xl font-sans">
-        {quote.say}
+        {quote.say.slice(0, charIdx)}
+        <span className="inline-block animate-pulse w-2">{phase === 'typing' && charIdx < quote.say.length ? '|' : ' '}</span>
       </blockquote>
       {(quote.response || quote.author) && (
         <h5
