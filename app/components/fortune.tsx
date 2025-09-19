@@ -45,15 +45,33 @@ const fortuneBaseStyles: string = [
 
 import React, { useEffect, useState } from 'react'
 
+const fadeStyle = `
+@keyframes fadeOutLetter {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.fade-out-letter {
+  animation: fadeOutLetter 0.32s linear forwards;
+}
+`;
+
+if (typeof window !== "undefined") {
+  const style = document.createElement('style');
+  style.innerHTML = fadeStyle;
+  document.head.appendChild(style);
+}
+
 const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
   const [idx, setIdx] = useState(() => Math.floor(Math.random() * data.length))
   const [charIdx, setCharIdx] = useState(0)
   const [paused, setPaused] = useState(false)
   const [phase, setPhase] = useState<'typing' | 'waiting' | 'deleting'>('typing')
+  const [fadedIndices, setFadedIndices] = useState<number[]>([])
   const charDelay = 64 // ms per character
 
   useEffect(() => {
     setCharIdx(0)
+    setFadedIndices([])
     setPhase('typing')
   }, [idx, data])
 
@@ -79,25 +97,37 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
       waitTimeout = setTimeout(() => {
         setPhase('deleting')
       }, 2000)
-    } else if (phase === 'deleting' && charIdx > 0) {
+    } else if (phase === 'deleting' && fadedIndices.length < len) {
       charInterval = setInterval(() => {
-        setCharIdx(prev => {
-          if (prev > 1) {
-            return prev - 1
-          } else {
-            clearInterval(charInterval)
-            setIdx(i => (i + 1) % data.length)
-            setPhase('typing')
-            return 0
-          }
-        })
-      }, charDelay / 2)
+        setFadedIndices(prev => {
+          // Get an array of all unfaded indices
+          const available = Array.from({ length: len }, (_, i) => i).filter(i => !prev.includes(i));
+          if (available.length === 0) return prev;
+          // Pick a random unfaded index
+          const next = available[Math.floor(Math.random() * available.length)];
+          return [...prev, next];
+        });
+      }, charDelay / 2);
     }
     return () => {
       if (charInterval) clearInterval(charInterval)
       if (waitTimeout) clearTimeout(waitTimeout)
     }
   }, [charIdx, phase, paused, data, idx])
+
+  // Handle transition to the next quote after all letters have faded
+  useEffect(() => {
+    const quote = data[idx]
+    const len = quote.say.length
+    if (phase === 'deleting' && fadedIndices.length >= len && !paused) {
+      const resetTimeout = setTimeout(() => {
+        setIdx(i => (i + 1) % data.length)
+        setFadedIndices([])
+        setPhase('typing')
+      }, 320) // match the fade-out CSS duration
+      return () => clearTimeout(resetTimeout)
+    }
+  }, [phase, fadedIndices, paused, data, idx])
 
   const quote: Quote = data[idx]
 
@@ -108,8 +138,24 @@ const Fortune = function Fortune({ data }: { data: Quote[] }): JSX.Element {
       onMouseLeave={() => setPaused(false)}
     >
       <blockquote className="text-subtext0 text-2xl md:text-3xl font-sans">
-        {quote.say.slice(0, charIdx)}
-        <span className="inline-block animate-pulse w-2">{phase === 'typing' && charIdx < quote.say.length ? '|' : ' '}</span>
+        {phase !== 'deleting' ? (
+          <>
+            {quote.say.slice(0, charIdx)}
+            <span className="inline-block animate-pulse w-2">{phase === 'typing' && charIdx < quote.say.length ? '|' : ' '}</span>
+          </>
+        ) : (
+          <>
+            {quote.say.split('').map((ch, i) => (
+              <span
+                key={i}
+                            className={fadedIndices.includes(i) ? 'fade-out-letter' : ''}
+                            style={fadedIndices.includes(i) ? { opacity: 0 } : {}}
+              >
+                {ch}
+              </span>
+            ))}
+          </>
+        )}
       </blockquote>
       {(quote.response || quote.author) && (
         <h5
